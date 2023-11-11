@@ -1,8 +1,8 @@
 <script setup>
-import RotatingCard from "../../../examples/cards/rotatingCards/RotatingCard.vue";
-import RotatingCardFront from "../../../examples/cards/rotatingCards/RotatingCardFront.vue";
-import RotatingCardBack from "../../../examples/cards/rotatingCards/RotatingCardBack.vue";
-import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.vue";
+import RotatingCard from "../../../components/cards/rotatingCards/RotatingCard.vue";
+import RotatingCardFront from "../../../components/cards/rotatingCards/RotatingCardFront.vue";
+import RotatingCardBack from "../../../components/cards/rotatingCards/RotatingCardBack.vue";
+import DefaultInfoCard from "../../../components/cards/infoCards/DefaultInfoCard.vue";
 </script>
 <template>
   <section class="my-5 py-5">

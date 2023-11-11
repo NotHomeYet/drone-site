@@ -1,7 +1,7 @@
 <script setup>
-import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
-import CenteredFooter from "@/examples/footers/FooterCentered.vue";
-import Breadcrumbs from "@/examples/Breadcrumbs.vue";
+import DefaultNavbar from "@/components/navbars/NavbarDefault.vue";
+import CenteredFooter from "@/components/footers/FooterDefault.vue";
+import Breadcrumbs from "@/components/Breadcrumbs.vue";
 
 defineProps({
   breadcrumb: {

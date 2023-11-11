@@ -6,7 +6,7 @@ import MaterialInput from "@/components/MaterialInput.vue";
 import MaterialTextArea from "@/components/MaterialTextArea.vue";
 
 // image
-import bgContact from "@/assets/img/examples/blog2.jpg";
+import bgContact from "@/assets/img/components/blog2.jpg";
 
 // tooltip
 import setTooltip from "@/assets/js/tooltip";

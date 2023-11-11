@@ -1,6 +1,6 @@
 <script setup>
 // example component
-import HorizontalTeamCard from "@/examples/cards/teamCards/HorizontalTeamCard.vue";
+import HorizontalTeamCard from "@/components/cards/teamCards/HorizontalTeamCard.vue";
 
 // images
 import emma from "@/assets/img/team-5.jpg";

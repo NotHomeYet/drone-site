@@ -1,6 +1,6 @@
 export const breadcrumbsCode = `<script setup>
 // example component
-import Breadcrumbs from "@/examples/Breadcrumbs.vue";
+import Breadcrumbs from "@/components/Breadcrumbs.vue";
 </script>
 <template>
 <div class="container py-6 mt-2">
