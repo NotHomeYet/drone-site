@@ -48,8 +48,8 @@ defineProps({
             </div>
         </div>
         <div class="card-footer pt-0">
-            <a :href="action.route" class="btn w-100 mb-0" :class="`bg-gradient-${action.color} ${action.class}`"
-                v-html="action.label">
+            <a :href="action.route" class="btn w-100 mb-0" target="_blank"
+                :class="`bg-gradient-${action.color} ${action.class}`" v-html="action.label">
             </a>
         </div>
     </div>

@@ -8,6 +8,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@egjs/vue3-view360": "^3.0.4",
     "@popperjs/core": "2.11.5",
     "bootstrap": "5.1.3",
     "pinia": "2.0.14",
@@ -18,7 +19,8 @@
     "vue-count-to": "1.0.13",
     "vue-prism-editor": "2.0.0-alpha.2",
     "vue-responsive-video-background-player": "^2.3.1",
-    "vue-router": "4.0.15"
+    "vue-router": "4.0.15",
+    "vue3-marquee": "^4.1.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "1.1.0",

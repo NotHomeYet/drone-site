@@ -62,7 +62,8 @@ defineProps({
                 <span class="ps-3">{{ label }}</span>
             </div>
 
-            <a :href="action.route" class="btn btn-icon d-lg-block mt-3 mb-0" :class="`bg-gradient-${action.color}`">
+            <a :href="action.route" target="_blank" class="btn btn-icon d-lg-block mt-3 mb-0"
+                :class="`bg-gradient-${action.color}`">
                 {{ action.label }}
                 <i class="fas fa-arrow-right ms-1"></i>
             </a>

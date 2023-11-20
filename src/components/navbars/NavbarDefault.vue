@@ -109,18 +109,18 @@ watch(
           ? 'text-dark font-weight-bolder ms-sm-3'
           : 'text-white font-weight-bolder ms-sm-3',
       ]" :to="{ name: 'presentation' }" rel="tooltip" title="Altitude Droneworks" data-placement="bottom">
-        <img :src="logo" alt="altitidue droneworks icon" loading="lazy" :style="{ height: '30px', width: '30px' }" />
+        <img :src="logo" alt="altitude droneworks icon" loading="lazy" :style="{ height: '30px', width: '30px' }" />
       </RouterLink>
       <RouterLink class="navbar-brand d-block d-md-none" :class="
         props.transparent || props.dark
           ? 'text-white'
           : 'font-weight-bolder ms-sm-3'
       " to="/" rel="tooltip" title="Altitude Droneworks" data-placement="bottom">
-        <img :src="logo" alt="altitidue droneworks icon" loading="lazy" :style="{ height: '30px', width: '30px' }" />
+        <img :src="logo" alt="altitude droneworks icon" loading="lazy" :style="{ height: '30px', width: '30px' }" />
       </RouterLink>
 
-      <RouterLink class="btn btn-sm bg-gradient-success mb-0 ms-auto d-lg-none d-block"
-        to="/pages/landing-pages/contact-us" rel="tooltip" title="Contact Us" data-placement="bottom">
+      <RouterLink class="btn btn-sm bg-gradient-info mb-0 ms-auto d-lg-none d-block" to="/pages/landing-pages/contact-us"
+        rel="tooltip" title="Contact Us" data-placement="bottom">
         Contact Us
       </RouterLink>
       <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
@@ -153,11 +153,14 @@ watch(
                       <RouterLink :to="{ name: 'about' }" class="dropdown-item border-radius-md">
                         <span>About Us</span>
                       </RouterLink>
+                      <RouterLink :to="{ name: 'services' }" class="dropdown-item border-radius-md">
+                        <span>Services</span>
+                      </RouterLink>
+                      <RouterLink :to="{ name: 'regulations' }" class="dropdown-item border-radius-md">
+                        <span>Regulation and Compliance</span>
+                      </RouterLink>
                       <RouterLink :to="{ name: 'contactus' }" class="dropdown-item border-radius-md">
                         <span>Contact Us</span>
-                      </RouterLink>
-                      <RouterLink :to="{ name: 'author' }" class="dropdown-item border-radius-md">
-                        <span>Author</span>
                       </RouterLink>
                     </div>
                   </div>
@@ -170,11 +173,14 @@ watch(
                 <RouterLink :to="{ name: 'about' }" class="dropdown-item border-radius-md">
                   <span>About Us</span>
                 </RouterLink>
+                <RouterLink :to="{ name: 'services' }" class="dropdown-item border-radius-md">
+                  <span>Services</span>
+                </RouterLink>
+                <RouterLink :to="{ name: 'regulations' }" class="dropdown-item border-radius-md">
+                  <span>Regulation and Compliance</span>
+                </RouterLink>
                 <RouterLink :to="{ name: 'contactus' }" class="dropdown-item border-radius-md">
                   <span>Contact Us</span>
-                </RouterLink>
-                <RouterLink :to="{ name: 'author' }" class="dropdown-item border-radius-md">
-                  <span>Author</span>
                 </RouterLink>
               </div>
             </div>
@@ -182,7 +188,7 @@ watch(
         </ul>
         <ul class="navbar-nav d-lg-block d-none">
           <li class="nav-item">
-            <RouterLink class="btn btn-sm mb-0 bg-gradient-success" to="/pages/landing-pages/contact-us" rel="tooltip"
+            <RouterLink class="btn btn-sm mb-0 bg-gradient-info" to="/pages/landing-pages/contact-us" rel="tooltip"
               title="Contact Us" data-placement="bottom">
               Contact Us
             </RouterLink>

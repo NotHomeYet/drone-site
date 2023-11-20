@@ -42,8 +42,7 @@ onUnmounted(() => {
       <div class="container">
         <div class="row mt-12">
           <div class="text-center mx-auto position-relative">
-            <img :src="logo" alt="altitidue droneworks icon" loading="lazy"
-              :style="{ height: '150px', width: '150px' }" />
+            <img :src="logo" alt="altitude droneworks icon" loading="lazy" :style="{ height: '150px', width: '150px' }" />
           </div>
         </div>
         <div class="row">
@@ -57,9 +56,9 @@ onUnmounted(() => {
     </VideoBackground>
 
     <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
-      <!-- TODO - fill all this out!!! -->
       <PresentationInformation />
-      <PresentationTestimonials />
+      <!-- TODO add this back once I have some -->
+      <!-- <PresentationTestimonials /> -->
       <PresentationPricing />
     </div>
   </div>

@@ -35,31 +35,20 @@ defineProps({
             name: "about us",
             href: "/pages/landing-pages/about-us",
           },
-          {
-            name: "locations",
-            href: "TODO",
-          },
-          {
-            name: "faq",
-            href: "TODO",
-          },
         ],
       },
       {
         name: "services",
         items: [
-          { name: "real estate", href: "TODO" },
-          { name: "events", href: "TODO" },
-          { name: "survey / inspection", href: "TODO" },
-          { name: "custom aerial videography", href: "TODO" },
+          { name: "services", href: "/pages/landing-pages/services" },
         ],
       },
       {
         name: "help & support",
         items: [
           {
-            name: "regulatory compliance",
-            href: "TODO",
+            name: "regulation & compliance",
+            href: "/pages/landing-pages/regulations",
           },
           {
             name: "contact us",
@@ -72,15 +61,11 @@ defineProps({
         items: [
           {
             name: "terms & conditions",
-            href: "TODO",
+            href: "/pages/legal/terms",
           },
           {
             name: "privacy policy",
-            href: "TODO",
-          },
-          {
-            name: "licenses (EULA)",
-            href: "TODO",
+            href: "/pages/legal/privacy",
           },
         ],
       },
@@ -102,7 +87,7 @@ defineProps({
           <div>
             <ul class="d-flex flex-row ms-n3 nav">
               <li class="nav-item" v-for="{ icon, link } of socials" :key="link">
-                <a class="nav-link pe-1" :href="link" target="_blank" v-html="icon">
+                <a class="nav-link pe-1" :href="link" v-html="icon">
                 </a>
               </li>
             </ul>
@@ -112,7 +97,7 @@ defineProps({
           <h6 class="text-sm">{{ name }}</h6>
           <ul class="flex-column ms-n3 nav">
             <li class="nav-item" v-for="item of items" :key="item.name">
-              <a class="nav-link" :href="item.href" target="_blank">
+              <a class="nav-link" :href="item.href">
                 {{ item.name }}
               </a>
             </li>

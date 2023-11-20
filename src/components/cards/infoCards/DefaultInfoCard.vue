@@ -11,7 +11,7 @@ defineProps({
     type: Object,
     component: String,
     class: String,
-    default: () => {},
+    default: () => { },
   },
   title: {
     type: [String, Object],
@@ -39,22 +39,14 @@ export default {
 <template>
   <div :class="`${col ? col : 'col-md-6'}`">
     <div v-bind="$attrs" class="info">
-      <i
-        v-if="icon"
-        class="material-icons text-gradient"
-        :class="`${
-          typeof icon == 'object'
-            ? `text-${icon.color} text-${icon.size}`
-            : 'text-success text-3xl'
-        }`"
-        >{{ typeof icon == "object" ? icon.component : icon }}</i
-      >
+      <i v-if="icon" class="material-icons text-gradient" :class="`${typeof icon == 'object'
+        ? `text-${icon.color} text-${icon.size}`
+        : 'text-warning text-3xl'
+        }`">{{ typeof icon == "object" ? icon.component : icon }}</i>
       <img v-if="image" :src="image.component" :class="image.class" />
-      <h5
-        :class="
-          typeof title == 'string' ? 'font-weight-bolder mt-3' : title.class
-        "
-      >
+      <h5 :class="
+        typeof title == 'string' ? 'font-weight-bolder mt-3' : title.class
+      ">
         {{ typeof title == "string" ? title : title.text }}
       </h5>
       <p :class="typeof description == 'string' ? 'pe-5' : description.class">

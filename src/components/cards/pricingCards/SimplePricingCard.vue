@@ -57,8 +57,9 @@ defineProps({
                     <small class="text-sm text-secondary font-weight-bold" :class="{ 'text-white': color }">/{{
                         price.charged ?? "mo" }}</small>
                 </h3>
-                <a :href="action.route" class="btn btn-sm w-100 border-radius-md mt-4 mb-2" :class="action.color">{{
-                    action.label }}</a>
+                <a :href="action.route" target="_blank" class="btn btn-sm w-100 border-radius-md mt-4 mb-2"
+                    :class="action.color">{{
+                        action.label }}</a>
             </div>
             <hr class="horizontal dark my-0" />
             <div class="card-body">

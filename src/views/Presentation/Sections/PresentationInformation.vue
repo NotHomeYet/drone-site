@@ -3,66 +3,43 @@ import RotatingCard from "../../../components/cards/rotatingCards/RotatingCard.v
 import RotatingCardFront from "../../../components/cards/rotatingCards/RotatingCardFront.vue";
 import RotatingCardBack from "../../../components/cards/rotatingCards/RotatingCardBack.vue";
 import DefaultInfoCard from "../../../components/cards/infoCards/DefaultInfoCard.vue";
+
+// Images
+import lake2 from "@/assets/img/altitude/landscape/lake2.jpg";
+import spark from "@/assets/img/drones/spark.jpg";
 </script>
 <template>
-  <section class="my-5 py-5">
+  <section class="my-2 py-2">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
-          <RotatingCard>
-            <RotatingCardFront
-              image="https://images.unsplash.com/photo-1569683795645-b62e50fbf103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-              icon="touch_app"
-              title="Feel the <br /> Material Kit"
-              description="All the Bootstrap components that you need in a development have been
-        re-design with the new look."
-            />
-
-            <RotatingCardBack
-              image="https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80"
-              title="Discover More"
-              description="You will save a lot of time going from prototyping to full-functional
-                code because all elements are implemented."
-              :action="[
-                {
-                  route: './/sections/page-sections/hero-sections.html',
-                  label: 'Start with Headers',
-                },
-              ]"
-            />
-          </RotatingCard>
-        </div>
         <div class="col-lg-6 ms-auto">
           <div class="row justify-content-start">
-            <DefaultInfoCard
-              icon="content_copy"
-              title="Full Documentation"
-              description="Built by developers for developers. Check the foundation and
-                  you will find everything inside our documentation."
-            />
-            <DefaultInfoCard
-              icon="flip_to_front"
-              title="Bootstrap 5 Ready"
-              description="The world’s most popular front-end open source toolkit,
-                  featuring Sass variables and mixins."
-            />
+            <DefaultInfoCard icon="rocket_launch" title="Innovation and Technology"
+              description="Leverage the latest advancements in drone capabilities and camera equipment for high-quality and innovative visuals." />
+            <DefaultInfoCard icon="workspace_premium" title="Expertise and Skill"
+              description="Proven results from skilled operators and profesional expertise generate compelling aerial stills and video." />
           </div>
-          <div class="row justify-content-start mt-5">
-            <DefaultInfoCard
-              class="mt-3"
-              icon="price_change"
-              title="Save Time & Money"
-              description="Creating your design from scratch with dedicated designers can
-                be very expensive. Start with our Design System."
-            />
-            <DefaultInfoCard
-              class="mt-3"
-              icon="devices"
-              title="Fully Responsive"
-              description="Regardless of the screen size, the website content will
-                  naturally fit the given resolution."
-            />
+          <div class="row justify-content-start mt-2">
+            <DefaultInfoCard class="mt-3" icon="price_change" title="Save Time & Money"
+              description="A one-stop-shop solution utilizing a comprehensive range of tools from stunning photography to precise surveying." />
+            <DefaultInfoCard class="mt-3" icon="fork_left" title=" Versatility in Services"
+              description="Utilize a diverse range of services catering to various industries such as real estate, construction, events, and more." />
           </div>
+        </div>
+        <div class="col-lg-4 ms-auto me-auto">
+          <RotatingCard>
+            <RotatingCardFront :image="lake2" icon="local_police" title="Compliance and Regulations"
+              description="We operate in full compliance with Part 107 FAA aviation regulations in the NAS. We require drone insurance for all operations and are commited to a culture of safety." />
+
+            <RotatingCardBack :image="spark" title="Want more details?"
+              description="All comercial drone operators must adhear to Part 107 regulations when flying missions for any non recreational purpose."
+              :action="[
+                {
+                  route: './pages/landing-pages/regulations',
+                  label: 'Read More',
+                },
+              ]" />
+          </RotatingCard>
         </div>
       </div>
     </div>

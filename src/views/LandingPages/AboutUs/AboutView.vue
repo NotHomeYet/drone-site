@@ -14,7 +14,6 @@ import Typed from "typed.js";
 //sections
 import Information from "./Sections/AboutInformation.vue";
 import AboutTeam from "./Sections/AboutTeam.vue";
-import Newsletter from "./Sections/AboutNewsletter.vue";
 
 const body = document.getElementsByTagName("body")[0];
 //hooks
@@ -58,14 +57,14 @@ onUnmounted(() => {
               </h1>
               <div id="typed-strings">
                 <h1>the aerial professionals</h1>
-                <h1>the local crew</h1>
+                <h1>the front range crew</h1>
                 <h1>the UAV alchemists</h1>
                 <h1>Us</h1>
               </div>
               <p class="lead mb-4 text-white opacity-8">
                 Altitude Droneworks is a Denver CO local business serving the greater metro area and the surrounding
                 front range. We're always looking to delight our customers with professional expertise, quality work,
-                timely value, and a little altitidue.
+                timely value, and a little altitude.
               </p>
             </div>
           </div>
@@ -75,7 +74,6 @@ onUnmounted(() => {
     <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
       <Information />
       <AboutTeam />
-      <Newsletter />
     </div>
   </div>
   <DefaultFooter />
