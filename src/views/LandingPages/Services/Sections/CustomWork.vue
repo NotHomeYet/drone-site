@@ -12,29 +12,23 @@ import ff from "@/assets/img/altitude/custom/adventure.mp4";
 import fc1 from "@/assets/img/altitude/custom/fc1_1.1.1.jpg";
 import lake2 from "@/assets/img/altitude/landscape/lake2.jpg";
 import traffic from "@/assets/img/altitude/custom/traffic_still.jpg";
-import camp1 from "@/assets/img/altitude/camp/camp2.jpg";
-import camp2 from "@/assets/img/altitude/camp/camp1.jpg";
-import pano_1 from "@/assets/img/altitude/camp/pano1.jpg";
-
 </script>
 <template>
-  <section class="py-3">
+  <section class="py-1">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h3 class="mb-5">Custom Work</h3>
+          <h3 class="mb-2">Custom Work</h3>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-3 col-sm-6">
-          <TransparentBlogCard :image="fc1" title="Events and Celebrations" action=""
+          <TransparentBlogCard :image="fc1" title="Events and Celebrations"
             description="Capture dynamic shots of large-scale events, providing compelling footage for promotional purposes." />
         </div>
         <div class="col-lg-3 col-sm-6">
-          <div class="card-header p-0">
-            <VideoBackground class="d-block blur-shadow-image img-fluid border-radius-lg" :src="ff"
-              style="height: 130px; max-height: 130px">
-            </VideoBackground>
+          <div class="d-block blur-shadow-image img-fluid">
+            <VideoBackground class="border-radius-lg mx-auto position-relative h150" :src="ff" />
           </div>
           <div class="card-body px-0">
             <h5>Adventure Sessions</h5>
@@ -44,24 +38,12 @@ import pano_1 from "@/assets/img/altitude/camp/pano1.jpg";
           </div>
         </div>
         <div class="col-lg-3 col-sm-6">
-          <TransparentBlogCard :image="traffic" title="Traffic & Pedestrian Surveys" action=""
+          <TransparentBlogCard :image="traffic" title="Traffic & Pedestrian Surveys"
             description="Get a bird's eye view on traffic flow and pedestrian patterns, enabling informed decisions for safer, more efficient urban environments." />
         </div>
         <div class="col-lg-3 col-sm-6">
-          <BackgroundBlogCard :image="lake2" title="The Sky's the Limit" action=""
-            description="Have a novel idea that requires flying to new heights? Let talk!" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 mt-4">
-          <Vue3Marquee id="marquee-slider" duration="100" class="border-radius-lg">
-            <img :src="`${pano_1}`" :height="500" />
-            <img :src="`${lake2}`" :height="500" />
-            <img :src="`${traffic}`" :height="500" />
-            <img :src="`${camp1}`" :height="500" />
-            <img :src="`${camp2}`" :height="500" />
-            <img :src="`${fc1}`" :height="500" />
-          </Vue3Marquee>
+          <BackgroundBlogCard :image="lake2" title="The Sky's the Limit"
+            description="Have a novel idea that requires flying to new heights? Let's talk!" />
         </div>
       </div>
     </div>

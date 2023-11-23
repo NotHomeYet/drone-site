@@ -37,17 +37,17 @@ onUnmounted(() => {
       </div>
     </div>
   </div>
-  <div class="mx-auto" style="max-width: 1920px;">
-    <VideoBackground class="mx-auto position-relative" :src="`${splashView}`" style="max-height: 700px; height: 700vh;">
+  <div class="mx-auto body-container">
+    <VideoBackground class="mx-auto position-relative h700" :src="`${splashView}`">
       <div class="container">
         <div class="row mt-12">
           <div class="text-center mx-auto position-relative">
-            <img :src="logo" alt="altitude droneworks icon" loading="lazy" :style="{ height: '150px', width: '150px' }" />
+            <img :src="logo" alt="altitude droneworks icon" class="h150" loading="lazy" />
           </div>
         </div>
         <div class="row">
           <div class="text-center mx-auto position-relative" :style="{ marginTop: '-2rem' }">
-            <h1 class="text-white pt-3 mt-n5 me-2" :style="{ display: 'inline-block', textShadow: '2px 2px #000000' }">
+            <h1 class="text-white pt-3 mt-n5 me-2" :style="{ display: 'inline-block', textShadow: '3px 3px #000000' }">
               Altitude Droneworks
             </h1>
           </div>

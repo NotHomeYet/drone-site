@@ -45,7 +45,7 @@ onUnmounted(() => {
     label: 'Buy Now',
     color: 'btn-white',
   }" transparent />
-  <div class="mx-auto" style="max-width: 1920px;">
+  <div class="mx-auto body-container">
     <header class="bg-gradient-dark">
       <div class="page-header min-vh-75" :style="{ backgroundImage: `url(${bg0})` }">
         <span class="mask bg-gradient-dark opacity-6"></span>

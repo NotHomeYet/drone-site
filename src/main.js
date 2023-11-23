@@ -7,6 +7,9 @@ import router from "./router";
 import "./assets/css/nucleo-icons.css";
 import "./assets/css/nucleo-svg.css";
 
+// App
+import "./assets/css/app-style.css";
+
 // Globals
 import View360 from "@egjs/vue3-view360";
 

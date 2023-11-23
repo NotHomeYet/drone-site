@@ -21,7 +21,7 @@ import drone from "@/assets/img/drones/spark.jpg";
             <DefaultInfoCard color="info" icon="public" title="Denver Local"
               description="Local to Denver CO, serving the greater metro area and surrounding Front Range." />
             <DefaultInfoCard color="info" icon="3p" title="Customer Centric"
-              description="We listen to and work with our clients to get them the results they need. Lets talk!" />
+              description="We listen to and work with our clients to get them the results they need. Let's talk!" />
           </div>
         </div>
         <div class="col-lg-6 ms-auto mt-lg-0 mt-6">
@@ -32,7 +32,7 @@ import drone from "@/assets/img/drones/spark.jpg";
       <div class="row align-items-center">
         <div class="card-body">
           <h3>
-            Hours and Operating Area
+            Hours
           </h3>
           <p class="pb-3">
             <b>Consulation Hours:</b> 9AM MST - 5PM MST M-F
@@ -51,8 +51,8 @@ import drone from "@/assets/img/drones/spark.jpg";
             <b>Email:</b> altitudedroneworks@gmail.com
             <br />
             <!-- TODO: confirm this
-                                                                      <b>Address:</b> PO Box TODO Parker, CO 80134
-                                                                      <br /> -->
+                                                                          <b>Address:</b> PO Box TODO Parker, CO 80134
+                                                                          <br /> -->
             <RouterLink class="btn btn-sm mb-0 bg-gradient-success" to="/pages/landing-pages/contact-us" rel="tooltip"
               title="Contact Us" data-placement="bottom">
               Contact Us

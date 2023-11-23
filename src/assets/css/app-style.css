@@ -1,0 +1,13 @@
+.body-container {
+    max-width: 1920px;
+}
+
+.h150 {
+    max-height: 150px;
+    height: 150px;
+}
+
+.h700 {
+    max-height: 700px;
+    height: 700vh;
+}

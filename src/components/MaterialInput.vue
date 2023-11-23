@@ -76,6 +76,7 @@ function getClasses(size, success, error) {
     }}</label>
     <span v-if="icon" class="input-group-text"><i class="fas" :class="`fa-${icon}`" aria-hidden="true"></i></span>
     <input :id="id" :type="type" class="form-control" :class="[getClasses(size, success, error), inputClass]"
-      :value="value" :placeholder="placeholder" :isRequired="isRequired" :disabled="isDisabled" />
+      @input="$emit('update:value', $event.target.value)" :value="value" :placeholder="placeholder"
+      :isRequired="isRequired" :disabled="isDisabled" />
   </div>
 </template>

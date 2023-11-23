@@ -29,20 +29,21 @@ defineProps({
     },
     default: () => [
       {
+        name: "",
+        items: [
+        ],
+      },
+      {
         name: "company",
         items: [
           {
             name: "about us",
             href: "/pages/landing-pages/about-us",
           },
-        ],
-      },
-      {
-        name: "services",
-        items: [
           { name: "services", href: "/pages/landing-pages/services" },
         ],
       },
+
       {
         name: "help & support",
         items: [

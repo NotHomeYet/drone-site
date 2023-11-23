@@ -17,11 +17,7 @@ defineProps({
     route: String,
     color: String,
     label: String,
-    default: () => ({
-      route: "javascript:;",
-      color: "success",
-      label: "Read more",
-    }),
+    default: () => null,
   },
 });
 </script>
@@ -34,9 +30,12 @@ defineProps({
     </div>
     <div class="card-body px-0">
       <h5>
-        <a :href="action.route" class="text-dark font-weight-bold">{{
+        <a v-if="action" :href="action.route" class="text-dark font-weight-bold">{{
           title
         }}</a>
+        <span v-else>{{
+          title
+        }}</span>
       </h5>
       <p>
         {{ description }}

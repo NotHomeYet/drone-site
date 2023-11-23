@@ -26,7 +26,7 @@ onMounted(() => {
       </div>
     </div>
   </div>
-  <div class="mx-auto" style="max-width: 1920px;">
+  <div class="mx-auto body-container">
     <section>
       <div class="page-header min-vh-75">
         <div class="container">

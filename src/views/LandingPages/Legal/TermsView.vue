@@ -10,7 +10,7 @@ import DefaultFooter from "../../../components/footers/FooterDefault.vue";
     color: 'btn-white',
   }" transparent />
 
-  <div class="mx-auto" style="max-width: 1920px;">
+  <div class="mx-auto body-container">
     <div class="page-header min-height-400" :style="{ backgroundImage: `url(${image})` }" loading="lazy">
       <span class="mask bg-gradient-dark opacity-8">
         <div class="col-lg-8 text-center mx-auto my-auto mt-8">

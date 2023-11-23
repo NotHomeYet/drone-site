@@ -10,7 +10,7 @@ import DefaultFooter from "../../../components/footers/FooterDefault.vue";
     color: 'btn-white',
   }" transparent />
 
-  <div class="mx-auto" style="max-width: 1920px;">
+  <div class="mx-auto body-container">
     <div class="page-header min-height-400" :style="{ backgroundImage: `url(${image})` }" loading="lazy">
       <span class="mask bg-gradient-dark opacity-8">
         <div class="col-lg-8 text-center mx-auto my-auto mt-8">
@@ -25,8 +25,8 @@ import DefaultFooter from "../../../components/footers/FooterDefault.vue";
         <div class="col-lg-12">
           <h2>FAA Part 107 FAQ</h2>
           <p class="lead mb-4">
-            All comerical drone missions (ie operations not flown exclusivly for fun) fall under part 107 regulations. The
-            general guidelines are safety focused and limit or ban certain types of operations. Some of the rules are
+            All commercial drone missions (ie operations not flown exclusivly for fun) fall under part 107 regulations.
+            The general guidelines are safety focused and limit or ban certain types of operations. Some of the rules are
             fixed while others can be mitigated and lifted via a waiver application to the FAA prior to the mission start.
             the FAA has up to 90 days to evaluate waivers but generally responds more quickly.
           </p>
@@ -41,7 +41,7 @@ import DefaultFooter from "../../../components/footers/FooterDefault.vue";
               <h5>Do all participants need to be part 107 licensed?</h5>
               <p class="lead mb-4">
                 No - only the 'Remote Pilot in Command', who is the person directly in charge of the mission. No other
-                participants, including the person operation the controls for the drone, need to be licensed.
+                participants, including the person operating the controls for the drone, need to be licensed.
               </p>
             </li>
             <li>
@@ -54,9 +54,9 @@ import DefaultFooter from "../../../components/footers/FooterDefault.vue";
             <li>
               <h5>Can you fly at night?</h5>
               <p class="lead mb-4">
-                We can fly 30m after sunset or 30m before sunrise using anti-collision lighting. If flying directly prior
-                to sunrise or directly after sunset in that 30m window we can request a waiver to lift the lighting
-                requirement if there are mitigating controls.
+                It depends. We can fly 30m after sunset or 30m before sunrise using anti-collision lighting. If flying
+                directly prior to sunrise or directly after sunset in that 30m window we can request a waiver to lift the
+                lighting requirement if there are mitigating controls.
               </p>
             </li>
             <li>
@@ -77,14 +77,14 @@ import DefaultFooter from "../../../components/footers/FooterDefault.vue";
             <li>
               <h5>Can you fly while piloting from a moving vehicle?</h5>
               <p class="lead mb-4">
-                Yes in sparsly populated areas without a waiver, if in a populated area will need a waiver.
+                Yes in sparsely populated areas without a waiver, if in a populated area will need a waiver.
               </p>
             </li>
             <li>
               <h5>What about a crash that causes injury or property damage?</h5>
               <p class="lead mb-4">
                 Situation depending we will need to file a report with the FAA detailing the incident. Altitude Droneworks
-                pilots are required to carry drone insurage of at least 1M each mission per internal policy, which is not
+                pilots are required to carry drone insurance of at least 1M each mission per internal policy, which is not
                 a stipulation of part 107.
               </p>
             </li>

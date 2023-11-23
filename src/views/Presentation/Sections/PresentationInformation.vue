@@ -23,7 +23,7 @@ import spark from "@/assets/img/drones/spark.jpg";
             <DefaultInfoCard class="mt-3" icon="price_change" title="Save Time & Money"
               description="A one-stop-shop solution utilizing a comprehensive range of tools from stunning photography to precise surveying." />
             <DefaultInfoCard class="mt-3" icon="fork_left" title=" Versatility in Services"
-              description="Utilize a diverse range of services catering to various industries such as real estate, construction, events, and more." />
+              description="Offering a diverse range of services catering to various industries such as real estate, construction, events, and more." />
           </div>
         </div>
         <div class="col-lg-4 ms-auto me-auto">
@@ -32,7 +32,7 @@ import spark from "@/assets/img/drones/spark.jpg";
               description="We operate in full compliance with Part 107 FAA aviation regulations in the NAS. We require drone insurance for all operations and are commited to a culture of safety." />
 
             <RotatingCardBack :image="spark" title="Want more details?"
-              description="All comercial drone operators must adhear to Part 107 regulations when flying missions for any non recreational purpose."
+              description="All commercial drone operators must adhear to Part 107 regulations when flying missions for any non recreational purpose."
               :action="[
                 {
                   route: './pages/landing-pages/regulations',
