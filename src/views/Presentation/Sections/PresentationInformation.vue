@@ -35,7 +35,7 @@ import drone2 from "@/assets/img/drones/drone2.jpg";
               description="All commercial drone operators must adhere to Part 107 regulations when flying for any non-recreational purpose."
               :action="[
                 {
-                  route: './pages/landing-pages/regulations',
+                  route: 'regulations',
                   label: 'FAQ',
                 },
               ]" />

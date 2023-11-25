@@ -2,6 +2,9 @@
 //example components
 import DefaultNavbar from "../../../components/navbars/NavbarDefault.vue";
 import DefaultFooter from "../../../components/footers/FooterDefault.vue";
+
+// image
+import image from "@/assets/img/drones/drone1.jpg";
 </script>
 <template>
   <DefaultNavbar :action="{

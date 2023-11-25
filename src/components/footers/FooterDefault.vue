@@ -1,5 +1,6 @@
 <script setup>
 import logo from "@/assets/img/altitude/logo_big.png";
+import { RouterLink } from "vue-router";
 defineProps({
   brand: {
     type: Object,
@@ -9,7 +10,7 @@ defineProps({
     default: () => ({
       name: "Altitude Droneworks",
       logo: logo,
-      route: "/",
+      route: "presentation",
     }),
   },
   socials: {
@@ -26,21 +27,20 @@ defineProps({
       type: Array,
       name: String,
       href: String,
+      route: String,
     },
     default: () => [
-      {
-        name: "",
-        items: [
-        ],
-      },
       {
         name: "company",
         items: [
           {
             name: "about us",
-            href: "/pages/landing-pages/about-us",
+            route: "about"
           },
-          { name: "services", href: "/pages/landing-pages/services" },
+          {
+            name: "services",
+            route: "services",
+          },
         ],
       },
 
@@ -49,11 +49,11 @@ defineProps({
         items: [
           {
             name: "regulation & compliance",
-            href: "/pages/landing-pages/regulations",
+            route: "regulations"
           },
           {
             name: "contact us",
-            href: "/pages/landing-pages/contact-us",
+            route: "contactus"
           },
         ],
       },
@@ -62,14 +62,15 @@ defineProps({
         items: [
           {
             name: "terms & conditions",
-            href: "/pages/legal/terms",
+            route: "terms",
           },
           {
             name: "privacy policy",
-            href: "/pages/legal/privacy",
+            route: "privacy",
           },
         ],
       },
+
     ],
   },
 });
@@ -78,11 +79,11 @@ defineProps({
   <footer class="footer pt-5 mt-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 mb-4 ms-auto">
+        <div class="col-md-5 mb-4 ms-auto">
           <div>
-            <a :href="brand.route">
+            <RouterLink :to="{ name: brand.route }" class="dropdown-item border-radius-md">
               <img :src="brand.logo" class="mb-3 footer-logo" alt="main_logo" />
-            </a>
+            </RouterLink>
             <h6 class="font-weight-bolder mb-4">{{ brand.name }}</h6>
           </div>
           <div>
@@ -98,13 +99,15 @@ defineProps({
           <h6 class="text-sm">{{ name }}</h6>
           <ul class="flex-column ms-n3 nav">
             <li class="nav-item" v-for="item of items" :key="item.name">
-              <a class="nav-link" :href="item.href">
+              <a v-if="item.href" class="nav-link" :href="item.href">
                 {{ item.name }}
               </a>
+              <RouterLink v-if="item.route" class="nav-link" :to="{ name: item.route }">
+                {{ item.name }}
+              </RouterLink>
             </li>
           </ul>
         </div>
-
         <div class="col-12">
           <div class="text-center">
             <p class="text-dark my-4 text-sm font-weight-normal">

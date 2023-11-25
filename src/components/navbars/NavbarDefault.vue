@@ -18,29 +18,29 @@ const props = defineProps({
     default: () => ({
       route: "https://www.creative-tim.com/product/vue-material-kit",
       color: "bg-gradient-success",
-      label: "Free Download",
-    }),
+      label: "Free Download"
+    })
   },
   transparent: {
     type: Boolean,
-    default: false,
+    default: false
   },
   light: {
     type: Boolean,
-    default: false,
+    default: false
   },
   dark: {
     type: Boolean,
-    default: false,
+    default: false
   },
   sticky: {
     type: Boolean,
-    default: false,
+    default: false
   },
   darkText: {
     type: Boolean,
-    default: false,
-  },
+    default: false
+  }
 });
 
 // set arrow  color
@@ -97,7 +97,7 @@ watch(
     'my-3 blur border-radius-lg z-index-3 py-2 shadow py-2 start-0 end-0 mx-4 position-absolute mt-4':
       props.sticky,
     'navbar-light bg-white py-3': props.light,
-    ' navbar-dark bg-gradient-dark z-index-3 py-3': props.dark,
+    ' navbar-dark bg-gradient-dark z-index-3 py-3': props.dark
   }">
     <div :class="
       props.transparent || props.light || props.dark
@@ -107,7 +107,7 @@ watch(
       <RouterLink class="navbar-brand d-none d-md-block" :class="[
         (props.transparent && textDark.value) || !props.transparent
           ? 'text-dark font-weight-bolder ms-sm-3'
-          : 'text-white font-weight-bolder ms-sm-3',
+          : 'text-white font-weight-bolder ms-sm-3'
       ]" :to="{ name: 'presentation' }" rel="tooltip" title="Altitude Droneworks" data-placement="bottom">
         <img :src="logo" alt="altitude droneworks icon" loading="lazy" :style="{ height: '30px', width: '30px' }" />
       </RouterLink>
@@ -115,11 +115,10 @@ watch(
         props.transparent || props.dark
           ? 'text-white'
           : 'font-weight-bolder ms-sm-3'
-      " to="/" rel="tooltip" title="Altitude Droneworks" data-placement="bottom">
+      " :to="{ name: 'presentation' }" rel="tooltip" title="Altitude Droneworks" data-placement="bottom">
         <img :src="logo" alt="altitude droneworks icon" loading="lazy" :style="{ height: '30px', width: '30px' }" />
       </RouterLink>
-
-      <RouterLink class="btn btn-sm bg-gradient-info mb-0 ms-auto d-lg-none d-block" to="/pages/landing-pages/contact-us"
+      <RouterLink class="btn btn-sm bg-gradient-info mb-0 ms-auto d-lg-none d-block" :to="{ name: 'contactus' }"
         rel="tooltip" title="Contact Us" data-placement="bottom">
         Contact Us
       </RouterLink>
@@ -142,11 +141,14 @@ watch(
               <img :src="getArrowColor()" alt="down-arrow" class="arrow ms-1 d-lg-none d-block ms-auto" />
             </a>
             <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
-              aria-labelledby="dropdownMenuPages" style="overflow: auto;">
+              aria-labelledby="dropdownMenuPages">
               <div class="row d-none d-lg-block">
                 <div class="col-12 px-4 py-2">
                   <div class="row">
                     <div class="position-relative">
+                      <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+                        Landing Pages
+                      </div>
                       <RouterLink :to="{ name: 'presentation' }" class="dropdown-item border-radius-md">
                         <span>Home</span>
                       </RouterLink>
@@ -167,6 +169,9 @@ watch(
                 </div>
               </div>
               <div class="d-lg-none">
+                <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0">
+                  Mobile Pages
+                </div>
                 <RouterLink :to="{ name: 'presentation' }" class="dropdown-item border-radius-md">
                   <span>Home</span>
                 </RouterLink>
@@ -188,7 +193,7 @@ watch(
         </ul>
         <ul class="navbar-nav d-lg-block d-none">
           <li class="nav-item">
-            <RouterLink class="btn btn-sm mb-0 bg-gradient-info" to="/pages/landing-pages/contact-us" rel="tooltip"
+            <RouterLink class="btn btn-sm mb-0 bg-gradient-info" :to="{ name: 'contactus' }" rel="tooltip"
               title="Contact Us" data-placement="bottom">
               Contact Us
             </RouterLink>

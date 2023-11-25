@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router';
+
 defineProps({
   image: {
     type: String,
@@ -32,8 +34,10 @@ defineProps({
         {{ description }}
       </p>
       <div class="buttons-group">
-        <a v-for="({ route, color, label }, index) of action" :key="index" :href="route"
-          class="btn btn-sm mt-3 inline-block ms-1" :class="`${color ? `btn-${color}` : 'btn-white'}`">{{ label }}</a>
+        <RouterLink v-for="({ route, color, label }, index) of action" :key="index" :to="{ name: route }"
+          class="btn btn-sm mt-3 inline-block ms-1" :class="`${color ? `btn-${color}` : 'btn-white'}`">
+          {{ label }}
+        </RouterLink>
       </div>
     </div>
   </div>

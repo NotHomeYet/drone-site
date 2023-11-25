@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import PresentationView from "../views/Presentation/PresentationView.vue";
 import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
 import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
@@ -7,7 +7,7 @@ import RegulationView from "../views/LandingPages/Regulation/RegulationView.vue"
 import PrivacyView from "../views/LandingPages/Legal/PrivacyPolicyView.vue";
 import TermsView from "../views/LandingPages/Legal/TermsView.vue";
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",

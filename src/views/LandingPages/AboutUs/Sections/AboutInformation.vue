@@ -56,9 +56,9 @@ import drone from "@/assets/img/drones/drone3.jpg";
             <b>Email:</b> altitudedroneworks@gmail.com
             <br />
             <!-- TODO: confirm this
-                                                                                                                                                                                                          <b>Address:</b> PO Box TODO Parker, CO 80134
-                                                                                                                                                                                                          <br /> -->
-            <RouterLink class="btn btn-sm mb-0 bg-gradient-success" to="/pages/landing-pages/contact-us" rel="tooltip"
+                                                                                                                                                                                                            <b>Address:</b> PO Box TODO Parker, CO 80134
+                                                                                                                                                                                                            <br /> -->
+            <RouterLink class="btn btn-sm mb-0 bg-gradient-success" :to="{ name: 'contactus' }" rel="tooltip"
               title="Contact Us" data-placement="bottom">
               Contact Us
             </RouterLink>
