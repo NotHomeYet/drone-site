@@ -6,7 +6,7 @@ import BackgroundBlogCard from "../../../../components/cards/blogCards/Backgroun
 
 // Video Components
 import VideoBackground from 'vue-responsive-video-background-player'
-import over_head from "@/assets/img/altitude/camp/over-head.mp4";
+import sonrise from "@/assets/img/altitude/camp/sonrise.mp4";
 
 //Vue Material Kit 2 components
 import camp1 from "@/assets/img/altitude/camp/camp2.jpg";
@@ -33,7 +33,7 @@ import pano_sphere from "@/assets/img/altitude/camp/pano_sphere.jpg";
         </div>
         <div class="col-lg-3 col-sm-6">
           <div class="d-block blur-shadow-image img-fluid">
-          <VideoBackground class="border-radius-lg mx-auto position-relative h150" :src="over_head" />
+          <VideoBackground class="border-radius-lg mx-auto position-relative h150" :src="sonrise" />
         </div>
         <div class="card-body px-0">
           <h5>Site and Facility Showcase</h5>
@@ -49,11 +49,11 @@ import pano_sphere from "@/assets/img/altitude/camp/pano_sphere.jpg";
       </div>
     </div>
     <!-- TODO fix me
-                                                                                                            https://www.npmjs.com/package/@egjs/vue3-view360
-                                                                                                            <div class="row">
-                                                                                                            <div id="myPanoViewer">
-                                                                                                              <PanoViewer :tag="'div'" :image="pano_sphere" />
-                                                                                                            </div>
-                                                                                                          </div> -->
+                                                                                                                  https://www.npmjs.com/package/@egjs/vue3-view360
+                                                                                                                  <div class="row">
+                                                                                                                  <div id="myPanoViewer">
+                                                                                                                    <PanoViewer :tag="'div'" :image="pano_sphere" />
+                                                                                                                  </div>
+                                                                                                                </div> -->
   </section>
 </template>

@@ -91,12 +91,12 @@ import zone2 from "@/assets/img/drones/zone2.jpg";
               color: 'bg-gradient-dark',
             }" :specifications="[
   'Flat, clear rate',
-                  'Events or corporate promotional',
-                  'Build the perfect session',
-                  'Custom contract and invoicing',
-                  'Optional photo / video postprocessing',
-                  'Travel time included (Red Zone*)',
-                ]" /> -->
+                                    'Events or corporate promotional',
+                                    'Build the perfect session',
+                                    'Custom contract and invoicing',
+                                    'Optional photo / video postprocessing',
+                                    'Travel time included (Red Zone*)',
+                                  ]" /> -->
         </div>
       </div>
       <div class="row">
@@ -133,8 +133,8 @@ import zone2 from "@/assets/img/drones/zone2.jpg";
         <div class="col-md-8 mx-auto text-center mt-4">
           <h4>Further Out?</h4>
           <p><i class="material-icons text-gradient text-info text-3x1">public</i> Additional travel time can be added at
-            checkout - anything beyond 1.5h from Denver will need to contact us to
-            build their a custom order.
+            checkout for sites between Lyons and Fountain (Blue Zone) or just beyond. Anything more than 1.5 hours of
+            one-way travel from South Denver will need a custom order.
           </p>
         </div>
       </div>

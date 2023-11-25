@@ -75,30 +75,30 @@ import DefaultFooter from "../../../components/footers/FooterDefault.vue";
             TABLE OF CONTENTS
           </p>
           <p>
-            1. OUR SERVICES
-            2. INTELLECTUAL PROPERTY RIGHTS
-            3. USER REPRESENTATIONS
-            4. PURCHASES AND PAYMENT
-            5. POLICY
-            6. PROHIBITED ACTIVITIES
-            7. USER GENERATED CONTRIBUTIONS
-            8. CONTRIBUTION LICENSE
-            9. THIRD-PARTY WEBSITES AND CONTENT
-            10. SERVICES MANAGEMENT
-            11. PRIVACY POLICY
-            12. TERM AND TERMINATION
-            13. MODIFICATIONS AND INTERRUPTIONS
-            14. GOVERNING LAW
-            15. DISPUTE RESOLUTION
-            16. CORRECTIONS
-            17. DISCLAIMER
-            18. LIMITATIONS OF LIABILITY
-            19. INDEMNIFICATION
-            20. USER DATA
-            21. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
-            22. CALIFORNIA USERS AND RESIDENTS
-            23. MISCELLANEOUS
-            24. CONTACT US
+            1. OUR SERVICES <br />
+            2. INTELLECTUAL PROPERTY RIGHTS<br />
+            3. USER REPRESENTATIONS<br />
+            4. PURCHASES AND PAYMENT<br />
+            5. POLICY<br />
+            6. PROHIBITED ACTIVITIES<br />
+            7. USER GENERATED CONTRIBUTIONS<br />
+            8. CONTRIBUTION LICENSE<br />
+            9. THIRD-PARTY WEBSITES AND CONTENT<br />
+            10. SERVICES MANAGEMENT<br />
+            11. PRIVACY POLICY<br />
+            12. TERM AND TERMINATION<br />
+            13. MODIFICATIONS AND INTERRUPTIONS<br />
+            14. GOVERNING LAW<br />
+            15. DISPUTE RESOLUTION<br />
+            16. CORRECTIONS<br />
+            17. DISCLAIMER<br />
+            18. LIMITATIONS OF LIABILITY<br />
+            19. INDEMNIFICATION<br />
+            20. USER DATA<br />
+            21. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES<br />
+            22. CALIFORNIA USERS AND RESIDENTS<br />
+            23. MISCELLANEOUS<br />
+            24. CONTACT US<br />
           </p>
           <p>
 
@@ -150,13 +150,6 @@ import DefaultFooter from "../../../components/footers/FooterDefault.vue";
             Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded,
             translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose
             whatsoever, without our express prior written permission.
-          </p>
-          <p>
-            If you wish to make any use of the Services, Content, or Marks other than as set out in this section or
-            elsewhere in our Legal Terms, please address your request to: altitudedroneworks@gmail.com. If we ever grant
-            you the permission to post, reproduce, or publicly display any part of our Services or Content, you must
-            identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or
-            proprietary notice appears or is visible on posting, reproducing, or displaying our Content.
           </p>
           <p>
             We reserve all rights not expressly granted to you in and to the Services, Content, and Marks.
@@ -217,7 +210,7 @@ import DefaultFooter from "../../../components/footers/FooterDefault.vue";
             We accept the following forms of payment:
           </p>
           <p>
-            - Visa
+            Visa
             - Mastercard
             - American Express
             - Discover

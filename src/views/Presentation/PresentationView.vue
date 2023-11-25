@@ -38,9 +38,9 @@ onUnmounted(() => {
     </div>
   </div>
   <div class="mx-auto body-container">
-    <VideoBackground class="mx-auto position-relative h700" :src="`${splashView}`">
+    <VideoBackground class="mx-auto position-relative h750" :src="`${splashView}`">
       <div class="container">
-        <div class="row mt-12">
+        <div class="row mt-12 pt-6">
           <div class="text-center mx-auto position-relative">
             <img :src="logo" alt="altitude droneworks icon" class="h150" loading="lazy" />
           </div>

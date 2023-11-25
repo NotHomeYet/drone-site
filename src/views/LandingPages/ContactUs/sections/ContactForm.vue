@@ -36,19 +36,20 @@ export default {
 <template>
   <section class="py-lg-5">
   <div class="container">
-      <div class="row">
-      <div class="col">
+    <div class="row">
+        <div class="col">
         <div class="card box-shadow-xl overflow-hidden mb-5">
           <div class="row">
-              <div class="col-lg-5 position-relative bg-cover px-0" :style="{ backgroundImage: `url(${bgi})` }"
+            <div class="col-lg-5 position-relative bg-cover px-0" :style="{ backgroundImage: `url(${bgi})` }"
                 loading="lazy">
                 <div class="z-index-2 text-center d-flex h-100 w-100 d-flex m-auto justify-content-center">
                   <div class="mask bg-gradient-dark opacity-8"></div>
                   <div class="p-5 ps-sm-8 position-relative text-start my-auto z-index-2">
                     <h3 class="text-white">Contact Information</h3>
-                    <p class="text-white opacity-8 mb-4">
-                      Fill out the form and the team will get back to you within 24 hours.
-                    </p>
+                    <!-- TODO fix form -->
+                    <!-- <p class="text-white opacity-8 mb-4">
+                          Fill out the form and the team will get back to you within 24 hours.
+                        </p> -->
                     <div class="d-flex p-2 text-white">
                       <div>
                         <i class="fas fa-phone text-sm"></i>
@@ -96,39 +97,39 @@ export default {
                   </div>
                     <!-- TODO - reenabel -->
                     <!-- <div class="row  px-4">
-                        <div class="col-md-6">
-                          <MaterialInput id="cx-name" class="input-group-static mb-4" type="text" label="Full Name"
-                            placeholder="Full Name" v-bind="user" />
-                        </div>
-                        <div class="col-md-6 ps-md-2">
-                          <MaterialInput id="cx-email" class="input-group-static mb-4" type="email" label="Email"
-                            placeholder="hello@creative-tim.com" v-bind="email" />
-                        </div>
-                        <div class="col-md-6 ps-md-2">
-                          <MaterialInput id="cx-phone" class="input-group-static mb-4" type="phone" label="Phone Number"
-                            placeholder="###-###-####" v-bind="phone" />
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-12 ps-md-2 pb-3">
-                          <MaterialSelect id="cx-reason" class="input-group-static" type="select" label="Contact Reason"
-                            v-bind="option"
-                            :options="['Schedule Session', 'Free Consultation', 'Regulatory Information', 'Come Fly With Us', 'Other']" />
-                        </div>
-                      </div>
-                      <div class="row  px-4">
-                        <div class="form-group mb-0 mt-md-0 mt-4">
-                          <MaterialTextArea id="cx-detail" class="input-group-static mb-4" :rows="6" v-bind="details"
-                            placeholder="Add any questions, comments, or additional context that would be helpful in assisting you.">
-                            Additional Details
-                          </MaterialTextArea>
-                        </div>
-                        <div class="col-md-12 text-center">
-                          <MaterialButton variant="gradient" color="info" class="mt-3 mb-0" @click="submit">
-                            Send Message
-                          </MaterialButton>
-                        </div>
-                      </div> -->
+                            <div class="col-md-6">
+                              <MaterialInput id="cx-name" class="input-group-static mb-4" type="text" label="Full Name"
+                                placeholder="Full Name" v-bind="user" />
+                            </div>
+                            <div class="col-md-6 ps-md-2">
+                              <MaterialInput id="cx-email" class="input-group-static mb-4" type="email" label="Email"
+                                placeholder="hello@creative-tim.com" v-bind="email" />
+                            </div>
+                            <div class="col-md-6 ps-md-2">
+                              <MaterialInput id="cx-phone" class="input-group-static mb-4" type="phone" label="Phone Number"
+                                placeholder="###-###-####" v-bind="phone" />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12 ps-md-2 pb-3">
+                              <MaterialSelect id="cx-reason" class="input-group-static" type="select" label="Contact Reason"
+                                v-bind="option"
+                                :options="['Schedule Session', 'Free Consultation', 'Regulatory Information', 'Come Fly With Us', 'Other']" />
+                            </div>
+                          </div>
+                          <div class="row  px-4">
+                            <div class="form-group mb-0 mt-md-0 mt-4">
+                              <MaterialTextArea id="cx-detail" class="input-group-static mb-4" :rows="6" v-bind="details"
+                                placeholder="Add any questions, comments, or additional context that would be helpful in assisting you.">
+                                Additional Details
+                              </MaterialTextArea>
+                            </div>
+                            <div class="col-md-12 text-center">
+                              <MaterialButton variant="gradient" color="info" class="mt-3 mb-0" @click="submit">
+                                Send Message
+                              </MaterialButton>
+                            </div>
+                          </div> -->
                   </div>
                 </form>
               </div>

@@ -6,10 +6,10 @@ import BackgroundBlogCard from "../../../../components/cards/blogCards/Backgroun
 // Video Components
 import { Vue3Marquee } from 'vue3-marquee'
 import VideoBackground from 'vue-responsive-video-background-player'
-import ff from "@/assets/img/altitude/custom/adventure.mp4";
+import ff from "@/assets/img/altitude/events/fall_fest.mp4";
 
 //Vue Material Kit 2 components
-import fc1 from "@/assets/img/altitude/custom/fc1_1.1.1.jpg";
+import fc1 from "@/assets/img/altitude/events/foundry1.jpg";
 import lake2 from "@/assets/img/altitude/landscape/lake2.jpg";
 import traffic from "@/assets/img/altitude/custom/traffic_still.jpg";
 </script>

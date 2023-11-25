@@ -84,8 +84,8 @@ import DefaultFooter from "../../../components/footers/FooterDefault.vue";
               <h5>What about a crash that causes injury or property damage?</h5>
               <p class="lead mb-4">
                 Situation depending we will need to file a report with the FAA detailing the incident. Altitude Droneworks
-                pilots are required to carry drone insurance of at least 1M each mission per internal policy, which is not
-                a stipulation of part 107.
+                pilots are required to carry drone insurance of at least $1M each mission per internal policy, which is
+                not a stipulation of part 107.
               </p>
             </li>
           </ul>

@@ -5,8 +5,8 @@ import RotatingCardBack from "../../../components/cards/rotatingCards/RotatingCa
 import DefaultInfoCard from "../../../components/cards/infoCards/DefaultInfoCard.vue";
 
 // Images
-import lake2 from "@/assets/img/altitude/landscape/lake2.jpg";
-import spark from "@/assets/img/drones/spark.jpg";
+import drone1 from "@/assets/img/drones/drone3.jpg";
+import drone2 from "@/assets/img/drones/drone2.jpg";
 </script>
 <template>
   <section class="my-2 py-2">
@@ -14,29 +14,29 @@ import spark from "@/assets/img/drones/spark.jpg";
       <div class="row align-items-center">
         <div class="col-lg-6 ms-auto">
           <div class="row justify-content-start">
-            <DefaultInfoCard icon="rocket_launch" title="Innovation and Technology"
-              description="Leverage the latest advancements in drone capabilities and camera equipment for high-quality and innovative visuals." />
-            <DefaultInfoCard icon="workspace_premium" title="Expertise and Skill"
-              description="Proven results from skilled operators and profesional expertise generate compelling aerial stills and video." />
+            <DefaultInfoCard icon="camera" title="Photography And Videography"
+              description="Capture the extraordinary with drone powered Photography and Videography expertise. Elevate your narrative with unparalleled precision and artistic perspective." />
+            <DefaultInfoCard icon="rocket_launch" title="Expertise and Skill"
+              description="Leverage the latest in aerial tech for high-quality and innovative visuals. Stay up to date with trends, such as expanding into First Person View (FPV) flythroughs." />
           </div>
           <div class="row justify-content-start mt-2">
             <DefaultInfoCard class="mt-3" icon="price_change" title="Save Time & Money"
-              description="A one-stop-shop solution utilizing a comprehensive range of tools from stunning photography to precise surveying." />
+              description="Enjoy a one-stop-shop solution for anything from stunning photography to precise surveying. Use simple, one click ordering or build your own custom mission." />
             <DefaultInfoCard class="mt-3" icon="fork_left" title=" Versatility in Services"
-              description="Offering a diverse range of services catering to various industries such as real estate, construction, events, and more." />
+              description="Proven results with a diverse range of services catering to various industries; real estate, construction, large events, surveying, corporate branding, and more." />
           </div>
         </div>
         <div class="col-lg-4 ms-auto me-auto">
           <RotatingCard>
-            <RotatingCardFront :image="lake2" icon="local_police" title="Compliance and Regulations"
-              description="We operate in full compliance with Part 107 FAA aviation regulations in the NAS. We require drone insurance for all operations and are commited to a culture of safety." />
+            <RotatingCardFront :image="drone1" icon="local_police" title="Compliance and Regulations"
+              description="All missions operate in compliance with Part 107 FAA aviation regulations and fly with at least $1M in drone liability insurance coverage. Share the commitment to a culture of safety and excellence." />
 
-            <RotatingCardBack :image="spark" title="Want more details?"
-              description="All commercial drone operators must adhear to Part 107 regulations when flying missions for any non recreational purpose."
+            <RotatingCardBack :image="drone2" title="Want more details?"
+              description="All commercial drone operators must adhere to Part 107 regulations when flying for any non-recreational purpose."
               :action="[
                 {
                   route: './pages/landing-pages/regulations',
-                  label: 'Read More',
+                  label: 'FAQ',
                 },
               ]" />
           </RotatingCard>

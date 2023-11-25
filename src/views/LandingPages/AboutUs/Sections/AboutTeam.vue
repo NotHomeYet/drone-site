@@ -22,8 +22,8 @@ import noah from "@/assets/img/team/noah_fly.jpg";
       <div class="row">
         <div class="col-lg-6 col-12">
           <HorizontalTeamCard class="mt-4" :image="noah" :profile="{ name: 'Noah Moore', link: 'javascript:;' }"
-            :position="{ label: 'Owner / Founder', color: 'success' }"
-            description="Noah has been flying drones and other RC aircraft for most of his life and using drones for professional photography since 2017. He has a professional background in Aerospace engineering, cloud technologies, and cybersecurity and loves to join his expertise in technology with practical applications such as aerial videography." />
+            :position="{ label: 'Owner / Founder / Pilot', color: 'success' }"
+            description="Noah has been using drones for aerial photography since 2017 and is a certified part 107 pilot. He has a background in Aerospace engineering, cloud technologies, and cybersecurity and loves to join his expertise in technology with practical uses." />
         </div>
       </div>
     </div>

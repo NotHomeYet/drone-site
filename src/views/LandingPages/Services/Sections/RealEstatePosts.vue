@@ -10,15 +10,15 @@ import { Vue3Marquee } from 'vue3-marquee'
 import VideoBackground from 'vue-responsive-video-background-player'
 
 //Vue Material Kit 2 components
-import shawct from "@/assets/img/altitude/house/shawct.jpg";
-import ph1 from "@/assets/img/altitude/house/ph1.jpg";
-import ph2 from "@/assets/img/altitude/house/ph2.jpg";
-import ph3 from "@/assets/img/altitude/house/ph3.jpg";
-import bath from "@/assets/img/altitude/house/bath.jpg";
-import mh1 from "@/assets/img/altitude/house/mh1.jpg";
-import mh2 from "@/assets/img/altitude/house/mh2.jpg";
-import mh3 from "@/assets/img/altitude/house/mh3.jpg";
-import fpv from "@/assets/img/altitude/house/fpv.mp4";
+import shawct from "@/assets/img/altitude/house/random/shawct.jpg";
+import ph1 from "@/assets/img/altitude/house/ph/ph1.jpg";
+import ph2 from "@/assets/img/altitude/house/ph/ph2.jpg";
+import ph3 from "@/assets/img/altitude/house/ph/ph3.jpg";
+import bath from "@/assets/img/altitude/house/random/bath.jpg";
+import mh1 from "@/assets/img/altitude/house/mh/mh1.jpg";
+import mh2 from "@/assets/img/altitude/house/mh/mh2.jpg";
+import mh3 from "@/assets/img/altitude/house/mh/mh3.jpg";
+import fpv from "@/assets/img/altitude/house/random/fpv.mp4";
 </script>``
 <template>
   <section class="py-1">
