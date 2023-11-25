@@ -130,63 +130,61 @@ watch(
           <span class="navbar-toggler-bar bar3"></span>
         </span>
       </button>
-      <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+      <div class="collapse navbar-collapse pt-2 pb-2" id="navigation">
         <ul class="navbar-nav navbar-nav-hover ms-auto">
           <li class="nav-item dropdown dropdown-hover mx-2">
-            <a role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center" :class="getTextColor()"
-              id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="material-icons opacity-6 me-2 text-md" :class="getTextColor()">dashboard</i>
-              Pages
-              <img :src="getArrowColor()" alt="down-arrow" class="arrow ms-2 d-lg-block d-none" />
-              <img :src="getArrowColor()" alt="down-arrow" class="arrow ms-1 d-lg-none d-block ms-auto" />
-            </a>
-            <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
-              aria-labelledby="dropdownMenuPages">
-              <div class="row d-none d-lg-block">
-                <div class="col-12 px-4 py-2">
-                  <div class="row">
-                    <div class="position-relative">
-                      <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
-                        Landing Pages
+            <div class="d-lg-none px-2">
+              <RouterLink :to="{ name: 'presentation' }" class="dropdown-item border-radius-md">
+                <span>Home</span>
+              </RouterLink>
+              <RouterLink :to="{ name: 'about' }" class="dropdown-item border-radius-md">
+                <span>About Us</span>
+              </RouterLink>
+              <RouterLink :to="{ name: 'services' }" class="dropdown-item border-radius-md">
+                <span>Services</span>
+              </RouterLink>
+              <RouterLink :to="{ name: 'regulations' }" class="dropdown-item border-radius-md">
+                <span>Regulation and Compliance</span>
+              </RouterLink>
+              <RouterLink :to="{ name: 'contactus' }" class="dropdown-item border-radius-md">
+                <span>Contact Us</span>
+              </RouterLink>
+            </div>
+            <div class=" d-lg-block d-none">
+              <a role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center" :class="getTextColor()"
+                id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="material-icons opacity-6 me-2 text-md" :class="getTextColor()">dashboard</i>
+                Pages
+                <img :src="getArrowColor()" alt="down-arrow" class="arrow ms-2" />
+              </a>
+              <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
+                aria-labelledby="dropdownMenuPages">
+                <div class="row">
+                  <div class="col-12 px-4 py-2">
+                    <div class="row">
+                      <div class="position-relative">
+                        <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+                          Landing Pages
+                        </div>
+                        <RouterLink :to="{ name: 'presentation' }" class="dropdown-item border-radius-md">
+                          <span>Home</span>
+                        </RouterLink>
+                        <RouterLink :to="{ name: 'about' }" class="dropdown-item border-radius-md">
+                          <span>About Us</span>
+                        </RouterLink>
+                        <RouterLink :to="{ name: 'services' }" class="dropdown-item border-radius-md">
+                          <span>Services</span>
+                        </RouterLink>
+                        <RouterLink :to="{ name: 'regulations' }" class="dropdown-item border-radius-md">
+                          <span>Regulation and Compliance</span>
+                        </RouterLink>
+                        <RouterLink :to="{ name: 'contactus' }" class="dropdown-item border-radius-md">
+                          <span>Contact Us</span>
+                        </RouterLink>
                       </div>
-                      <RouterLink :to="{ name: 'presentation' }" class="dropdown-item border-radius-md">
-                        <span>Home</span>
-                      </RouterLink>
-                      <RouterLink :to="{ name: 'about' }" class="dropdown-item border-radius-md">
-                        <span>About Us</span>
-                      </RouterLink>
-                      <RouterLink :to="{ name: 'services' }" class="dropdown-item border-radius-md">
-                        <span>Services</span>
-                      </RouterLink>
-                      <RouterLink :to="{ name: 'regulations' }" class="dropdown-item border-radius-md">
-                        <span>Regulation and Compliance</span>
-                      </RouterLink>
-                      <RouterLink :to="{ name: 'contactus' }" class="dropdown-item border-radius-md">
-                        <span>Contact Us</span>
-                      </RouterLink>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="d-lg-none">
-                <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0">
-                  Mobile Pages
-                </div>
-                <RouterLink :to="{ name: 'presentation' }" class="dropdown-item border-radius-md">
-                  <span>Home</span>
-                </RouterLink>
-                <RouterLink :to="{ name: 'about' }" class="dropdown-item border-radius-md">
-                  <span>About Us</span>
-                </RouterLink>
-                <RouterLink :to="{ name: 'services' }" class="dropdown-item border-radius-md">
-                  <span>Services</span>
-                </RouterLink>
-                <RouterLink :to="{ name: 'regulations' }" class="dropdown-item border-radius-md">
-                  <span>Regulation and Compliance</span>
-                </RouterLink>
-                <RouterLink :to="{ name: 'contactus' }" class="dropdown-item border-radius-md">
-                  <span>Contact Us</span>
-                </RouterLink>
               </div>
             </div>
           </li>
