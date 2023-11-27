@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router';
+
 defineProps({
   image: {
     type: String,
@@ -15,6 +17,7 @@ defineProps({
   action: {
     type: Object,
     route: String,
+    html: String,
     color: String,
     label: String,
     default: () => null,
@@ -40,10 +43,15 @@ defineProps({
       <p>
         {{ description }}
       </p>
-      <a v-if="action" :href="action.route" class="text-sm icon-move-right" :class="`text-${action.color}`">{{
+      <a v-if="action?.html" :href="action.html" class="text-sm icon-move-right" :class="`text-${action.color}`">{{
         action.label }}
         <i class="fas fa-arrow-right text-xs ms-1"></i>
       </a>
+      <RouterLink v-if="action?.route" :to="{ name: action.route }" class="text-sm icon-move-right"
+        :class="`text-${action.color}`">{{
+          action.label }}
+        <i class="fas fa-arrow-right text-xs ms-1"></i>
+      </RouterLink>
     </div>
   </div>
 </template>

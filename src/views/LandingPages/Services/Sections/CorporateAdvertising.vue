@@ -4,56 +4,27 @@
 import TransparentBlogCard from "../../../../components/cards/blogCards/TransparentBlogCard.vue";
 import BackgroundBlogCard from "../../../../components/cards/blogCards/BackgroundBlogCard.vue";
 
-// Video Components
-import VideoBackground from 'vue-responsive-video-background-player'
-import sonrise from "@/assets/img/altitude/camp/sonrise.mp4";
-
 //Vue Material Kit 2 components
-import camp1 from "@/assets/img/altitude/camp/camp2.jpg";
-import camp2 from "@/assets/img/altitude/camp/camp1.jpg";
-import pano_1 from "@/assets/img/altitude/camp/pano1.jpg";
-import pano_sphere from "@/assets/img/altitude/camp/pano_sphere.jpg";
+import camp1 from "@/assets/img/altitude/camp/camp1.jpg";
+import pano from "@/assets/img/altitude/camp/pano2.jpg";
 </script>
 <template>
   <section class="py-1">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
-          <h3 class="mb-2">Corporate Branding and Advertising</h3>
+        <div class="col-lg-12">
+          <BackgroundBlogCard :image="pano" title="Corporate Branding and Advertising" class="mb-4"
+            description="Each brand is distinct. Let's find a higher angle on the narative unique to you. Use compelling aerial footage for visually stunning advertisements to enhance brand visibility." />
+
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-3 col-md-12 col-12 pb-4">
-          <BackgroundBlogCard :image="camp1" title="Tell Your Story"
-            description="Each brand is distinct. Let's find a higher angle on the narative unique to you." />
-        </div>
         <div class="col-lg-3 col-sm-6">
-          <TransparentBlogCard :image="camp2" title="Aerial Promotion"
-            description="We produce compelling aerial footage for visually stunning advertisements to enhance brand visibility." />
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="d-block blur-shadow-image img-fluid">
-          <VideoBackground class="border-radius-lg mx-auto position-relative h150" :src="sonrise" />
-        </div>
-        <div class="card-body px-0">
-          <h5>Site and Facility Showcase</h5>
-          <p>We showcase corporate sites, facilities, services, and more, offering promotional materials and branding.
-          </p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <img class="d-block blur-shadow-image img-fluid border-radius-lg pb-4" :src="pano_1" />
-          <TransparentBlogCard :image="pano_sphere" title="Immersive Panoramas"
-            description="Stunning landscapes, dynamic scenes, or progress status capture the essence of a site with accuracy and artistry." />
+          <TransparentBlogCard :image="camp1" title="Mountain Ranch" description="" :action="{
+            route: 'sonrise', color: 'info', label: 'Sample',
+          }" />
         </div>
       </div>
     </div>
-    <!-- TODO fix me
-                                                                                                                  https://www.npmjs.com/package/@egjs/vue3-view360
-                                                                                                                  <div class="row">
-                                                                                                                  <div id="myPanoViewer">
-                                                                                                                    <PanoViewer :tag="'div'" :image="pano_sphere" />
-                                                                                                                  </div>
-                                                                                                                </div> -->
   </section>
 </template>

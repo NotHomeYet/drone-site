@@ -19,7 +19,7 @@ import image from "@/assets/img/altitude/landscape/silverthorne.jpg";
       <span class="mask bg-gradient-dark opacity-8">
         <div class="col-lg-8 text-center mx-auto my-auto mt-8">
           <h1 class="text-white">
-            Service Highlights
+            Services Highlights
           </h1>
         </div>
       </span>

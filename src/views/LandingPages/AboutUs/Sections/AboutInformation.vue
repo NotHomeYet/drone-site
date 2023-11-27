@@ -12,13 +12,13 @@ import drone from "@/assets/img/drones/drone3.jpg";
         <div class="col-lg-6">
           <div class="row justify-content-start">
             <DefaultInfoCard color="info" icon="photo_camera" title="Phtography"
-              description="Video up to 4K/60fps, 2.7k/120fps, and stills up to 4000x3000px or 48MP." />
+              description="Max video specs up to 4K/60fps, 2.7k/120fps, and photography specs up to 4000x3000px or 48MP." />
             <DefaultInfoCard color="monitor" icon="monitor" title="Post Processing"
-              description="Resized photos and videos at 1536x1152, 1200x530, or any desired deliverable." />
+              description="Touchup, color correction, and resizing photos and videos to raw, 1536x1152, 1200x530, or any desired deliverable." />
           </div>
           <div class="row justify-content-start">
             <DefaultInfoCard color="info" icon="flight" title="Drones Used"
-              description="The DJI Avata (14m flight) and DJI Spark (8m flight), job depending, with more being supported soon." />
+              description="The DJI Avata (14m flight times) and DJI Spark (8m flight times), with batteries to cover the mission's duration." />
             <DefaultInfoCard color="info" icon="payments" title="Flexible Invoicing"
               description="Accepting Cash, Credit, Paypal, etc through Square. Request a custom invoice or easy order online." />
           </div>
@@ -31,7 +31,7 @@ import drone from "@/assets/img/drones/drone3.jpg";
         </div>
         <div class="col-lg-6 ms-auto mt-lg-0 mt-6">
           <CenteredBlogCard :image="drone" title="Services Offered"
-            description="Exterior and interior drone powered photography and videography. Residential and commercial real estate, fpv flythroughs, private events, promotional videography, aerial survey and inspections, 360 site panoramas, corporate branding and advertising, and more." />
+            description="Exterior and interior drone powered photography and videography. Residential and commercial real estate, fpv flythroughs, private events or celebrations, aerial survey and inspections, 360 site panoramas, corporate branding and advertising, and more." />
         </div>
       </div>
       <div class="row align-items-center">
@@ -56,8 +56,8 @@ import drone from "@/assets/img/drones/drone3.jpg";
             <b>Email:</b> altitudedroneworks@gmail.com
             <br />
             <!-- TODO: confirm this
-                                                                                                                                                                                                            <b>Address:</b> PO Box TODO Parker, CO 80134
-                                                                                                                                                                                                            <br /> -->
+                                                                                                                                                                                                                              <b>Address:</b> PO Box TODO Parker, CO 80134
+                                                                                                                                                                                                                              <br /> -->
             <RouterLink class="btn btn-sm mb-0 bg-gradient-success" :to="{ name: 'contactus' }" rel="tooltip"
               title="Contact Us" data-placement="bottom">
               Contact Us

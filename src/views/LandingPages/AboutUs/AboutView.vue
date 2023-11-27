@@ -63,7 +63,7 @@ onUnmounted(() => {
               </div>
               <p class="lead mb-4 text-white opacity-8">
                 Altitude Droneworks - serving the greater Denver CO metro area and the surrounding
-                front range, looking to delight our customers with professional expertise, quality work,
+                front range, looking to delight with professional expertise, quality work,
                 timely value, and a little altitude.
               </p>
             </div>

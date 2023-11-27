@@ -15,14 +15,14 @@ import noah from "@/assets/img/team/noah_fly.jpg";
             The Team
           </h3>
           <p class="text-white opacity-8 mb-0">
-            Currently a lean mean fighting machine. We're small but mighty.
+            Currently opearting as freelancers. A lean mean fighting machine. We're small but mighty.
           </p>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6 col-12">
           <HorizontalTeamCard class="mt-4" :image="noah" :profile="{ name: 'Noah Moore', link: 'javascript:;' }"
-            :position="{ label: 'Owner / Founder / Pilot', color: 'success' }"
+            :position="{ label: 'Founder / Freelancer Pilot', color: 'success' }"
             description="Noah has been using drones for aerial photography since 2017 and is a certified part 107 pilot. He has a background in Aerospace engineering, cloud technologies, and cybersecurity and loves to join his expertise in technology with practical uses." />
         </div>
       </div>

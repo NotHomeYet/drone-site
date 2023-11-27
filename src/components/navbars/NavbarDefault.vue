@@ -6,7 +6,6 @@ import { useWindowsWidth } from "../../assets/js/useWindowsWidth";
 // images
 import logo from "@/assets/img/altitude/logo_big.png";
 import ArrDark from "@/assets/img/down-arrow-dark.svg";
-import downArrow from "@/assets/img/down-arrow.svg";
 import DownArrWhite from "@/assets/img/down-arrow-white.svg";
 
 const props = defineProps({
@@ -141,10 +140,10 @@ watch(
                 <span>About Us</span>
               </RouterLink>
               <RouterLink :to="{ name: 'services' }" class="dropdown-item border-radius-md">
-                <span>Services</span>
+                <span>Service Highlights</span>
               </RouterLink>
               <RouterLink :to="{ name: 'regulations' }" class="dropdown-item border-radius-md">
-                <span>Regulation and Compliance</span>
+                <span>Regulation and Compliance (FAQ)</span>
               </RouterLink>
               <RouterLink :to="{ name: 'contactus' }" class="dropdown-item border-radius-md">
                 <span>Contact Us</span>
@@ -173,10 +172,10 @@ watch(
                           <span>About Us</span>
                         </RouterLink>
                         <RouterLink :to="{ name: 'services' }" class="dropdown-item border-radius-md">
-                          <span>Services</span>
+                          <span>Service Highlights</span>
                         </RouterLink>
                         <RouterLink :to="{ name: 'regulations' }" class="dropdown-item border-radius-md">
-                          <span>Regulation and Compliance</span>
+                          <span>Regulation and Compliance (FAQ)</span>
                         </RouterLink>
                         <RouterLink :to="{ name: 'contactus' }" class="dropdown-item border-radius-md">
                           <span>Contact Us</span>

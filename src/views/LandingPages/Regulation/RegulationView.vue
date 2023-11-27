@@ -26,7 +26,7 @@ import image from "@/assets/img/drones/drone1.jpg";
     <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
       <div class="row mx-2">
         <div class="col-lg-12">
-          <h2>FAA Part 107 FAQ</h2>
+          <h2>Regulation and Compliance FAQ</h2>
           <p class="lead mb-4">
             All commercial drone missions (ie operations not flown exclusivly for fun) fall under part 107 regulations.
             The general guidelines are safety focused and limit or ban certain types of operations. Some of the rules are
@@ -45,6 +45,13 @@ import image from "@/assets/img/drones/drone1.jpg";
               <p class="lead mb-4">
                 No - only the 'Remote Pilot in Command', who is the person directly in charge of the mission. No other
                 participants, including the person operating the controls for the drone, need to be licensed.
+              </p>
+            </li>
+            <li>
+              <h5>Is Altitude Droneworks Incorporated?</h5>
+              <p class="lead mb-4">
+                Not currently, plans in the works - as of now all pilots act as freelancers under the umbrella of Altitude
+                Droneworks management and policy.
               </p>
             </li>
             <li>

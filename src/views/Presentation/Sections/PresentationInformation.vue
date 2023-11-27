@@ -17,11 +17,11 @@ import drone2 from "@/assets/img/drones/drone2.jpg";
             <DefaultInfoCard icon="camera" title="Photography And Videography"
               description="Capture the extraordinary with drone powered Photography and Videography expertise. Elevate your narrative with unparalleled precision and artistic perspective." />
             <DefaultInfoCard icon="rocket_launch" title="Expertise and Skill"
-              description="Leverage the latest in aerial tech for high-quality and innovative visuals. Stay up to date with trends, such as expanding into First Person View (FPV) flythroughs." />
+              description="Leverage the latest in aerial tech for high-quality and innovative visuals. Stay up to date with trends such as First Person View (FPV) flythroughs and timelapse videos." />
           </div>
           <div class="row justify-content-start mt-2">
             <DefaultInfoCard class="mt-3" icon="price_change" title="Save Time & Money"
-              description="Enjoy a one-stop-shop solution for anything from stunning photography to precise surveying. Use simple, one click ordering or build your own custom mission." />
+              description="Enjoy a one-stop-shop solution for anything from stunning photography to difficult to reach inspections. Use simple, one click ordering or build your own custom mission." />
             <DefaultInfoCard class="mt-3" icon="fork_left" title=" Versatility in Services"
               description="Proven results with a diverse range of services catering to various industries; real estate, construction, large events, surveying, corporate branding, and more." />
           </div>
