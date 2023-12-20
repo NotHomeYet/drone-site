@@ -10,6 +10,8 @@ import ParkerView from "../views/LandingPages/Services/Sections/RealEstate/Parke
 import CentennialView from "../views/LandingPages/Services/Sections/RealEstate/CentennialView.vue";
 import SummitView from "../views/LandingPages/Services/Sections/RealEstate/SummitView.vue";
 import InteriorView from "../views/LandingPages/Services/Sections/RealEstate/InteriorView.vue";
+import LandView from "../views/LandingPages/Services/Sections/Corporate/LandView.vue";
+import CinematicsView from "../views/LandingPages/Services/Sections/Corporate/CinematicsView.vue";
 import SonriseView from "../views/LandingPages/Services/Sections/Corporate/SonriseView.vue";
 import EventsView from "../views/LandingPages/Services/Sections/Events/EventsView.vue";
 import TrafficView from "../views/LandingPages/Services/Sections/Events/TrafficView.vue";
@@ -75,6 +77,16 @@ const router = createRouter({
       path: "/pages/service/sonrise",
       name: "sonrise",
       component: SonriseView,
+    },
+    {
+      path: "/pages/service/land",
+      name: "land",
+      component: LandView,
+    },
+    {
+      path: "/pages/service/cinematics",
+      name: "cinematics",
+      component: CinematicsView,
     },
     {
       path: "/pages/service/events",

@@ -26,24 +26,24 @@ import foundry2 from "@/assets/img/altitude/events/foundry2.jpg";
     </div>
     <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
       <div class="container">
-        <div class="row mt-4">
-          <div class="col-lg-6 col-sm-6">
-            <VideoBackground class="shadow border-radius-lg" style="height: 100%;" :src="ball" />
-          </div>
-          <div class="col-lg-6 col-sm-6">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 mt-4">
             <img :src="foundry2" :alt="foundry2" class="img-fluid shadow border-radius-lg" loading="lazy" />
           </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-lg-6 col-sm-6">
-            <VideoBackground class="shadow border-radius-lg" style="height: 100%;" :src="fall_fest" />
+          <div class="col-lg-6 col-sm-6 mt-4">
+            <VideoBackground class="shadow border-radius-lg" style="height: 100%; min-height: 200px" :src="ball" />
           </div>
-          <div class="col-lg-6 col-sm-6">
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 mt-4">
+            <VideoBackground class="shadow border-radius-lg" style="height: 100%; min-height: 200px;" :src="fall_fest" />
+          </div>
+          <div class="col-lg-6 col-sm-6 mt-4">
             <img :src="foundry" :alt="foundry" class="img-fluid shadow border-radius-lg" loading="lazy" />
           </div>
         </div>
-        <div class="row mt-4">
-          <RouterLink class="btn btn-sm bg-gradient-info mb-0 ms-auto" :to="{ name: 'services' }" rel="tooltip"
+        <div class="row">
+          <RouterLink class="btn btn-sm bg-gradient-info mb-0 ms-auto mt-4" :to="{ name: 'services' }" rel="tooltip"
             title="Back" data-placement="bottom">
             Back
           </RouterLink>

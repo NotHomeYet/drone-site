@@ -34,7 +34,7 @@ defineProps({
         name: "company",
         items: [
           {
-            name: "about us",
+            name: "about",
             route: "about"
           },
           {
@@ -52,7 +52,7 @@ defineProps({
             route: "regulations"
           },
           {
-            name: "contact us",
+            name: "contact",
             route: "contactus"
           },
         ],

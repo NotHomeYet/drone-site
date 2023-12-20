@@ -59,7 +59,7 @@ onUnmounted(() => {
                 <h1>the Aerial Pros</h1>
                 <h1>the Denver Locals</h1>
                 <h1>the UAV Alchemists</h1>
-                <h1>Us</h1>
+                <h1>Altitude Droneworks</h1>
               </div>
               <p class="lead mb-4 text-white opacity-8">
                 Altitude Droneworks - serving the greater Denver CO metro area and the surrounding

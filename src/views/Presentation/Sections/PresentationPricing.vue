@@ -52,11 +52,12 @@ import zone2 from "@/assets/img/drones/zone2.jpg";
   'Travel time included (Red Zone*)',
 ]" />
 
-          <SimplePricingCard title="Standard" description="Includes everything you need for a typical listing."
+          <SimplePricingCard title="Standard" color="bg-gradient-dark"
+            description="Includes everything you need for a typical listing."
             :price="{ currency: '$', amount: '299', charged: 'session' }" :action="{
               route: 'https://square.link/u/0QxJIyHJ',
               label: 'Buy now',
-              color: 'bg-gradient-dark',
+              color: 'btn-white',
               charged: 'session'
             }" :specifications="[
   'Up to 25 photos / 5m of edited video',
@@ -67,36 +68,21 @@ import zone2 from "@/assets/img/drones/zone2.jpg";
   'Travel time included (Red Zone*)',
 ]" />
 
-          <SimplePricingCard color="bg-gradient-dark" title="The Works"
-            description="Capture the best of everything all in one place."
+          <SimplePricingCard title="The Works" description="Capture the best of everything all in one place."
             :price="{ currency: '$', amount: '449', charged: 'session' }" :action="{
               route: 'https://square.link/u/k8dCKBMY',
               label: 'Buy now',
-              color: 'btn-white'
+              color: 'bg-gradient-dark'
             }" :specifications="[
   'Unlimited photos or videos',
   'Extended First Person View (FPV) flythrough',
   'Interior or exterior',
   'Extended flight durations',
   '1.5h session time',
+  'Custom Job',
   'Enhanced photo / video postprocessing',
   'Travel time included (Red Zone*)',
 ]" />
-        <!-- 
-          <SimplePricingCard title="Custom / Hourly" description="Hire by the hour, custom work or longer events."
-            :price="{ currency: '$', amount: '149', charged: 'hour' }" :action="{
-              route:
-                'https://square.link/u/v2xLyEl6',
-              label: 'Buy now',
-              color: 'bg-gradient-dark',
-            }" :specifications="[
-  'Flat, clear rate',
-                                    'Events or corporate promotional',
-                                    'Build the perfect session',
-                                    'Custom contract and invoicing',
-                                    'Optional photo / video postprocessing',
-                                    'Travel time included (Red Zone*)',
-                                  ]" /> -->
         </div>
       </div>
       <div class="row">

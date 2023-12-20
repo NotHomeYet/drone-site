@@ -29,46 +29,46 @@ import sonrise from "@/assets/img/altitude/camp/sonrise.mp4";
     </div>
     <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
       <div class="container">
-        <div class="row mt-4">
-          <div class="col-lg-6 col-sm-6">
-            <VideoBackground class="shadow border-radius-lg" style="height: 100%;" :src="sonrise" />
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 mt-4">
+            <VideoBackground class="shadow border-radius-lg" style="height: 100%; min-height: 200px;" :src="sonrise" />
           </div>
-          <div class="col-lg-6 col-sm-6">
+          <div class="col-lg-6 col-sm-6 mt-4">
             <img :src="camp1" :alt="camp1" class="img-fluid shadow border-radius-lg" loading="lazy" />
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-lg-6 col-sm-6">
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 mt-4">
             <img :src="camp3" :alt="camp3" class="img-fluid shadow border-radius-lg" loading="lazy" />
           </div>
-          <div class="col-lg-6 col-sm-6">
+          <div class="col-lg-6 col-sm-6 mt-4">
             <img :src="camp2" :alt="camp2" class="img-fluid shadow border-radius-lg" loading="lazy" />
           </div>
       </div>
-      <div class="row mt-4">
-        <div class="col-lg-12">
+      <div class="row">
+        <div class="col-lg-12 mt-4">
           <img :src="pano1" :alt="pano1" class="img-fluid shadow border-radius-lg" loading="lazy" />
         </div>
       </div>
-        <div class="row mt-4">
-          <div class="col-lg-12">
+        <div class="row">
+          <div class="col-lg-12 mt-4">
             <img :src="pano2" :alt="pano2" class="img-fluid shadow border-radius-lg" loading="lazy" />
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-lg-12">
+        <div class="row">
+          <div class="col-lg-12 mt-4">
             <img :src="pano_sphere" :alt="pano_sphere" class="img-fluid shadow border-radius-lg" loading="lazy" />
           </div>
           <!-- TODO fix me
-                                                                                                                                                                                https://www.npmjs.com/package/@egjs/vue3-view360
-                                                                                                                                                                                <div class="row">
-                                                                                                                                                                                <div id="myPanoViewer">
-                                                                                                                                                                                  <PanoViewer :tag="'div'" :image="pano_sphere" />
-                                                                                                                                                                                </div>
-                                                                                                                                                                              </div> -->
+                                                                                                                                                                                          https://www.npmjs.com/package/@egjs/vue3-view360
+                                                                                                                                                                                          <div class="row">
+                                                                                                                                                                                          <div id="myPanoViewer">
+                                                                                                                                                                                            <PanoViewer :tag="'div'" :image="pano_sphere" />
+                                                                                                                                                                                          </div>
+                                                                                                                                                                                        </div> -->
         </div>
-        <div class="row mt-4">
-          <RouterLink class="btn btn-sm bg-gradient-info mb-0 ms-auto" :to="{ name: 'services' }" rel="tooltip"
+        <div class="row">
+          <RouterLink class="btn btn-sm bg-gradient-info mb-0 ms-auto mt-4" :to="{ name: 'services' }" rel="tooltip"
             title="Back" data-placement="bottom">
             Back
           </RouterLink>

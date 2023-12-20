@@ -98,11 +98,10 @@ watch(
     'navbar-light bg-white py-3': props.light,
     ' navbar-dark bg-gradient-dark z-index-3 py-3': props.dark
   }">
-    <div :class="
-      props.transparent || props.light || props.dark
-        ? 'container'
-        : 'container-fluid px-0'
-    ">
+    <div :class="props.transparent || props.light || props.dark
+      ? 'container'
+      : 'container-fluid px-0'
+      ">
       <RouterLink class="navbar-brand d-none d-md-block" :class="[
         (props.transparent && textDark.value) || !props.transparent
           ? 'text-dark font-weight-bolder ms-sm-3'
@@ -110,11 +109,10 @@ watch(
       ]" :to="{ name: 'presentation' }" rel="tooltip" title="Altitude Droneworks" data-placement="bottom">
         <img :src="logo" alt="altitude droneworks icon" loading="lazy" :style="{ height: '30px', width: '30px' }" />
       </RouterLink>
-      <RouterLink class="navbar-brand d-block d-md-none" :class="
-        props.transparent || props.dark
-          ? 'text-white'
-          : 'font-weight-bolder ms-sm-3'
-      " :to="{ name: 'presentation' }" rel="tooltip" title="Altitude Droneworks" data-placement="bottom">
+      <RouterLink class="navbar-brand d-block d-md-none" :class="props.transparent || props.dark
+        ? 'text-white'
+        : 'font-weight-bolder ms-sm-3'
+        " :to="{ name: 'presentation' }" rel="tooltip" title="Altitude Droneworks" data-placement="bottom">
         <img :src="logo" alt="altitude droneworks icon" loading="lazy" :style="{ height: '30px', width: '30px' }" />
       </RouterLink>
       <RouterLink class="btn btn-sm bg-gradient-info mb-0 ms-auto d-lg-none d-block" :to="{ name: 'contactus' }"
@@ -137,16 +135,16 @@ watch(
                 <span>Home</span>
               </RouterLink>
               <RouterLink :to="{ name: 'about' }" class="dropdown-item border-radius-md">
-                <span>About Us</span>
+                <span>About</span>
               </RouterLink>
               <RouterLink :to="{ name: 'services' }" class="dropdown-item border-radius-md">
                 <span>Service Highlights</span>
               </RouterLink>
               <RouterLink :to="{ name: 'regulations' }" class="dropdown-item border-radius-md">
-                <span>Regulation and Compliance (FAQ)</span>
+                <span>Regulations</span>
               </RouterLink>
               <RouterLink :to="{ name: 'contactus' }" class="dropdown-item border-radius-md">
-                <span>Contact Us</span>
+                <span>Contact</span>
               </RouterLink>
             </div>
             <div class=" d-lg-block d-none">
@@ -169,16 +167,16 @@ watch(
                           <span>Home</span>
                         </RouterLink>
                         <RouterLink :to="{ name: 'about' }" class="dropdown-item border-radius-md">
-                          <span>About Us</span>
+                          <span>About</span>
                         </RouterLink>
                         <RouterLink :to="{ name: 'services' }" class="dropdown-item border-radius-md">
                           <span>Service Highlights</span>
                         </RouterLink>
                         <RouterLink :to="{ name: 'regulations' }" class="dropdown-item border-radius-md">
-                          <span>Regulation and Compliance (FAQ)</span>
+                          <span>Regulation</span>
                         </RouterLink>
                         <RouterLink :to="{ name: 'contactus' }" class="dropdown-item border-radius-md">
-                          <span>Contact Us</span>
+                          <span>Contact</span>
                         </RouterLink>
                       </div>
                     </div>
