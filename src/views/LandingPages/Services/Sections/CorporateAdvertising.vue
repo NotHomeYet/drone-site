@@ -6,7 +6,7 @@ import BackgroundBlogCard from "../../../../components/cards/blogCards/Backgroun
 
 //Vue Material Kit 2 components
 import camp1 from "@/assets/img/altitude/camp/camp1.jpg";
-import land1 from "@/assets/img/altitude/land/land1.jpg";
+import peregrine6 from "@/assets/img/altitude/bespoke/peregrine6.jpg";
 import p2 from "@/assets/img/altitude/cinematics/p2.jpg";
 import p5 from "@/assets/img/altitude/cinematics/p5.jpg";
 </script>
@@ -22,18 +22,18 @@ import p5 from "@/assets/img/altitude/cinematics/p5.jpg";
       </div>
       <div class="row">
         <div class="col-lg-3 col-sm-6">
-          <TransparentBlogCard :image="p5" title="Aerial Cinematics" description="" :action="{
+          <TransparentBlogCard :image="p5" title="Cinematics" description="" :action="{
             route: 'cinematics', color: 'info', label: 'Sample',
           }" />
         </div>
         <div class="col-lg-3 col-sm-6">
-          <TransparentBlogCard :image="camp1" title="Mountain Ranch" description="" :action="{
-            route: 'sonrise', color: 'info', label: 'Sample',
+          <TransparentBlogCard :image="peregrine6" title="Website Content" description="" :action="{
+            route: 'decks', color: 'info', label: 'Sample',
           }" />
         </div>
         <div class="col-lg-3 col-sm-6">
-          <TransparentBlogCard :image="land1" title="Land Purchase" description="" :action="{
-            route: 'land', color: 'info', label: 'Sample',
+          <TransparentBlogCard :image="camp1" title="Site Photography" description="" :action="{
+            route: 'sonrise', color: 'info', label: 'Sample',
           }" />
         </div>
       </div>

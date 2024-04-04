@@ -10,9 +10,7 @@ import p2 from "@/assets/img/altitude/cinematics/p2.jpg";
 import p6 from "@/assets/img/altitude/cinematics/p6.jpg";
 import landfpv from "@/assets/img/altitude/cinematics/landfpv.mp4";
 import pano1 from "@/assets/img/altitude/cinematics/pano1.jpg";
-import pano2 from "@/assets/img/altitude/cinematics/pano2.jpg";
 import pano3 from "@/assets/img/altitude/cinematics/pano3.jpg";
-import pano4 from "@/assets/img/altitude/cinematics/pano4.jpg";
 </script>
 <template>
   <DefaultNavbar transparent />
@@ -38,22 +36,12 @@ import pano4 from "@/assets/img/altitude/cinematics/pano4.jpg";
         </div>
         <div class="row">
           <div class="col-lg-12 mt-4">
-            <img :src="pano1" :alt="pano1" class="img-fluid shadow border-radius-lg" loading="lazy" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 mt-4">
-            <img :src="pano2" :alt="pano2" class="img-fluid shadow border-radius-lg" loading="lazy" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 mt-4">
             <img :src="pano3" :alt="pano3" class="img-fluid shadow border-radius-lg" loading="lazy" />
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12 mt-4">
-            <img :src="pano4" :alt="pano4" class="img-fluid shadow border-radius-lg" loading="lazy" />
+            <img :src="pano1" :alt="pano1" class="img-fluid shadow border-radius-lg" loading="lazy" />
           </div>
         </div>
         <div class="row">

@@ -15,6 +15,7 @@ import CinematicsView from "../views/LandingPages/Services/Sections/Corporate/Ci
 import SonriseView from "../views/LandingPages/Services/Sections/Corporate/SonriseView.vue";
 import EventsView from "../views/LandingPages/Services/Sections/Events/EventsView.vue";
 import TrafficView from "../views/LandingPages/Services/Sections/Events/TrafficView.vue";
+import BespokeVue from "../views/LandingPages/Services/Sections/Corporate/BespokeView.vue";
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
@@ -98,7 +99,15 @@ const router = createRouter({
       name: "traffic",
       component: TrafficView,
     },
+    {
+      path: "/pages/service/decks",
+      name: "decks",
+      component: BespokeVue,
+    },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 });
 
 export default router;

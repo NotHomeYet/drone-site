@@ -10,7 +10,7 @@ import noah from "@/assets/img/team/noah_fly.jpg";
   <section class="pb-5 position-relative bg-gradient-dark mx-n3">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 text-start mb-5 mt-5">
+        <div class="col-md-12 text-start mb-5 mt-5">
           <h3 class="text-white z-index-1 position-relative">
             The Team
           </h3>
@@ -22,8 +22,8 @@ import noah from "@/assets/img/team/noah_fly.jpg";
       <div class="row">
         <div class="col-lg-6 col-12">
           <HorizontalTeamCard class="mt-4" :image="noah" :profile="{ name: 'Noah Moore', link: 'javascript:;' }"
-            :position="{ label: 'Founder / Freelancer Pilot', color: 'success' }"
-            description="Noah has been using drones for aerial photography since 2017 and is a certified part 107 pilot. He has a background in Aerospace engineering, cloud technologies, and cybersecurity and loves to join his expertise in technology with practical uses." />
+            :position="{ label: 'Freelancer Pilot', color: 'success' }"
+            description="Noah has been flying drones for aerial photography since 2017 and is a certified part 107 pilot. He has a background in Aerospace engineering, cloud technologies, and cybersecurity." />
         </div>
       </div>
     </div>

@@ -48,13 +48,6 @@ import image from "@/assets/img/drones/drone1.jpg";
               </p>
             </li>
             <li>
-              <h5>Is Altitude Droneworks Incorporated?</h5>
-              <p class="lead mb-4">
-                Not currently, plans in the works - as of now all pilots act as freelancers under the umbrella of Altitude
-                Droneworks management and policy.
-              </p>
-            </li>
-            <li>
               <h5>What is the highest you can fly?</h5>
               <p class="lead mb-4">
                 We are limited to 400ft above ground level, or 400ft around and above a structure. In certain
@@ -64,7 +57,7 @@ import image from "@/assets/img/drones/drone1.jpg";
             <li>
               <h5>Can you fly at night?</h5>
               <p class="lead mb-4">
-                It depends. We can fly 30m after sunset or 30m before sunrise using anti-collision lighting. If flying
+                We can fly 30m after sunset or 30m before sunrise using anti-collision lighting. If flying
                 directly prior to sunrise or directly after sunset in that 30m window we can request a waiver to lift the
                 lighting requirement if there are mitigating controls.
               </p>
@@ -79,7 +72,7 @@ import image from "@/assets/img/drones/drone1.jpg";
             <li>
               <h5>Can you fly directly over people or vehicles?</h5>
               <p class="lead mb-4">
-                It depends on the situation, yes if the people are directly participating in the drone operation and yes
+                Yes if the people are directly participating in the drone operation and yes
                 if the drone is near but not directly over. Otherwise a waiver with mitigations is needed
                 prior to the mission.
               </p>
@@ -96,6 +89,14 @@ import image from "@/assets/img/drones/drone1.jpg";
                 Situation depending we will need to file a report with the FAA detailing the incident. Altitude Droneworks
                 pilots are required to carry drone insurance of at least $1M each mission per internal policy, which is
                 not a stipulation of part 107.
+              </p>
+            </li>
+            <li>
+              <h5>Is Altitude Droneworks Incorporated?</h5>
+              <p class="lead mb-4">
+                Yes as a sole proprietorship
+                . All pilots act as freelancers under the umbrella of Altitude
+                Droneworks management and policy.
               </p>
             </li>
           </ul>

@@ -42,14 +42,6 @@ import fpv from "@/assets/img/altitude/house/random/fpv.mp4";
             <img :src="bath2" :alt="bath2" class="img-fluid shadow border-radius-lg" loading="lazy" />
           </div>
           <div class="col-lg-6 col-sm-6 mt-4">
-            <img :src="bath3" :alt="bath3" class="img-fluid shadow border-radius-lg" loading="lazy" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-sm-6 mt-4">
-            <img :src="room2" :alt="room2" class="img-fluid shadow border-radius-lg" loading="lazy" />
-          </div>
-          <div class="col-lg-6 col-sm-6 mt-4">
             <img :src="room3" :alt="room3" class="img-fluid shadow border-radius-lg" loading="lazy" />
           </div>
         </div>

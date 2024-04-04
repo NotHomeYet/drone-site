@@ -12,11 +12,10 @@ import zone2 from "@/assets/img/drones/zone2.jpg";
       <div class="container pb-lg-8 pb-7 pt-5 postion-relative z-index-2 position-relative">
         <div class="row">
           <div class="col-md-7 mx-auto text-center">
-            <span class="badge bg-gradient-dark mb-2">Pricing</span>
-            <h3 class="text-white">Let's Take to the Sky</h3>
+            <h3 class="text-white">Simple Scheduling</h3>
             <p class="text-white">
-              Select from one of the pre-made session options or build your own custom order. Contact us for more
-              information or to schedule a free consultation for a custom job.
+              Schedule a pre-made session or contact us for more information, a free consultation, or to build a custom
+              session.
             </p>
           </div>
         </div>
@@ -25,64 +24,68 @@ import zone2 from "@/assets/img/drones/zone2.jpg";
     <div class="mt-lg-n8 mt-n6">
       <div class="container">
         <div class="row mt-5">
-          <SimplePricingCard title="No Frills" description="Fast session: no extras but gets the job done."
+          <SimplePricingCard title="Low Frills"
+            description="Fast and precise: limited extras but gets the job done. Great for quick outdoor work, repeated multiple time-lapse for ongoing projects, quick surveying, external listings, etc."
             :price="{ currency: '$', amount: '149', charged: 'session' }" :action="{
               route: 'https://square.link/u/m2J5h2Fo',
-              label: 'Buy now',
+              label: 'Schedule now',
               color: 'bg-gradient-dark',
               charged: 'session'
             }" :specifications="[
-  'Up to 10 photos / 1m of edited video',
-  'Exterior only',
-  '30m session time',
-  'Photo / video postprocessing',
-  'Travel time included (Red Zone*)',
-]" />
-          <SimplePricingCard title="FPV Only" description="Fast session: Extended First Person flythrough only."
+              'Exterior Only',
+              '30m session time',
+              '1-2m video',
+              '5-10 photographs',
+              'Limited photo / video postprocessing',
+              'Travel time included (Red Zone)',
+            ]" />
+          <SimplePricingCard title="First Person (FPV)"
+            description="User Focused: Extended First Person flythrough on a single target or site. Great for real estate listings, construction site tours, focused surveying, or for other video tours."
             :price="{ currency: '$', amount: '199', charged: 'session' }" :action="{
               route: 'https://square.link/u/7ss3iNRz',
-              label: 'Buy now',
+              label: 'Schedule now',
               color: 'bg-gradient-dark',
               charged: 'session'
             }" :specifications="[
-  'Extended First Person View (FPV) flythrough',
-  'Interior only',
-  '30m session time',
-  'Video postprocessing',
-  'Travel time included (Red Zone*)',
-]" />
+              'Extended First Person View (FPV) flythrough',
+              'Interior only',
+              '30m session time',
+              '1-2m video',
+              'Customized video postprocessing',
+              'Travel time included (Red Zone)',
+            ]" />
 
-          <SimplePricingCard title="Standard" color="bg-gradient-dark"
-            description="Includes everything you need for a typical listing."
+          <SimplePricingCard title="Standard Session" color="bg-gradient-dark"
+            description="Most common package - includes everything you need for a typical listing. Great for a full interior and exterior, more detailed project or content work, custom post-processing, etc."
             :price="{ currency: '$', amount: '299', charged: 'session' }" :action="{
               route: 'https://square.link/u/0QxJIyHJ',
-              label: 'Buy now',
+              label: 'Schedule now',
               color: 'btn-white',
               charged: 'session'
             }" :specifications="[
-  'Up to 25 photos / 5m of edited video',
-  'Introductory (short) First Person View (FPV) flythrough',
-  'Interior or exterior',
-  '1h session time',
-  'Photo / video postprocessing',
-  'Travel time included (Red Zone*)',
-]" />
+              'Interior or Exterior',
+              '60m session time',
+              '2-5m video',
+              '10-20 photographs',
+              'Customized photo / video postprocessing',
+              'Travel time included (Red Zone)',
+            ]" />
 
-          <SimplePricingCard title="The Works" description="Capture the best of everything all in one place."
+          <SimplePricingCard title="The Works"
+            description="The best of everything! A standard session plus an extended FPV or highly customized post-processing. Great for large-scale sites, marketing, or custom content."
             :price="{ currency: '$', amount: '449', charged: 'session' }" :action="{
               route: 'https://square.link/u/k8dCKBMY',
-              label: 'Buy now',
+              label: 'Schedule now',
               color: 'bg-gradient-dark'
             }" :specifications="[
-  'Unlimited photos or videos',
-  'Extended First Person View (FPV) flythrough',
-  'Interior or exterior',
-  'Extended flight durations',
-  '1.5h session time',
-  'Custom Job',
-  'Enhanced photo / video postprocessing',
-  'Travel time included (Red Zone*)',
-]" />
+              'Exteneded Interior or Exterior',
+              '90m session time',
+              '5m+ Video',
+              'Optional First Person View (FPV) flythrough',
+              '20+ photographs',
+              'Highly customized photo / video postprocessing',
+              'Travel time included (Red Zone)',
+            ]" />
         </div>
       </div>
       <div class="row">
@@ -99,35 +102,31 @@ import zone2 from "@/assets/img/drones/zone2.jpg";
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-8 mx-auto text-center mt-4">
-          <h4>* Travel Time</h4>
-          <p><i class="material-icons text-gradient text-info text-3x1">directions_car</i> We are local to
-            South Denver, CO. Travel is complementary for sites between W Colfax Ave and Perry Park (Red Zone) along the
-            Front Range.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 mx-auto text-center mt-4">
-          <div class="card-header p-0 position-relative">
-            <img :src="zone1" :alt="title" class="img-fluid border-radius-lg" />
+      <div class="bg-gradient-success position-relative mx-n3 overflow-hidden">
+        <img src="@/assets/img/shapes/pattern-lines.svg" alt="pattern-lines"
+          class="position-absolute start-0 top-md-0 w-100 opacity-6" />
+        <div class="container pb-lg-8 pb-7 pt-5 postion-relative z-index-2 position-relative">
+          <div class="row">
+            <div class="col-md-7 mx-auto text-center">
+              <h3 class="text-white">Local to Denver, CO</h3>
+              <p class="text-white">
+                Travel is included for sites between W Colfax Ave and Perry Park along the Front Range (Red Zone).
+                Additional travel time can be added at checkout for sites in the Blue Zone between Lyons and Fountain
+                (Blue Zone) or beyond.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-8 mx-auto text-center mt-4">
-          <h4>Further Out?</h4>
-          <p><i class="material-icons text-gradient text-info text-3x1">public</i> Additional travel time can be added at
-            checkout for sites between Lyons and Fountain (Blue Zone) or just beyond. Anything more than 1.5 hours of
-            one-way travel from South Denver will need a custom order.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 mx-auto text-center mt-4">
+      <div class="row mt-lg-n8 mt-n6">
+        <div class="col-md-6 mx-auto text-center mt-4">
           <div class="card-header p-0 position-relative">
-            <img :src="zone2" :alt="title" class="img-fluid border-radius-lg" />
+            <img :src="zone1" alt="redzone travel" class="img-fluid border-radius-lg" />
+          </div>
+        </div>
+        <div class="col-md-6 mx-auto text-center mt-4">
+          <div class="card-header p-0 position-relative">
+            <img :src="zone2" alt="bluezone travel travel" class="img-fluid border-radius-lg" />
           </div>
         </div>
       </div>

@@ -1,45 +1,55 @@
 <script setup>
-import RotatingCard from "../../../components/cards/rotatingCards/RotatingCard.vue";
-import RotatingCardFront from "../../../components/cards/rotatingCards/RotatingCardFront.vue";
-import RotatingCardBack from "../../../components/cards/rotatingCards/RotatingCardBack.vue";
 import DefaultInfoCard from "../../../components/cards/infoCards/DefaultInfoCard.vue";
-
-// Images
-import drone1 from "@/assets/img/drones/drone3.jpg";
-import drone2 from "@/assets/img/drones/drone2.jpg";
+import TransparentBlogCard from "../../../components/cards/blogCards/TransparentBlogCard.vue";
+import pano3 from "@/assets/img/altitude/cinematics/pano3.jpg";
 </script>
 <template>
   <section class="my-2 py-2">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6 ms-auto">
-          <div class="row justify-content-start">
-            <DefaultInfoCard icon="camera" title="Photography And Videography"
-              description="Capture the extraordinary with drone powered Photography and Videography expertise. Elevate your narrative with unparalleled precision and artistic perspective." />
-            <DefaultInfoCard icon="rocket_launch" title="Expertise and Skill"
-              description="Leverage the latest in aerial tech for high-quality and innovative visuals. Stay up to date with trends such as First Person View (FPV) flythroughs and timelapse videos." />
-          </div>
-          <div class="row justify-content-start mt-2">
-            <DefaultInfoCard class="mt-3" icon="price_change" title="Save Time & Money"
-              description="Enjoy a one-stop-shop solution for anything from stunning photography to difficult to reach inspections. Use simple, one click ordering or build your own custom mission." />
-            <DefaultInfoCard class="mt-3" icon="fork_left" title=" Versatility in Services"
-              description="Proven results with a diverse range of services catering to various industries; real estate, construction, large events, surveying, corporate branding, and more." />
+        <div class="row">
+          <div class="col-lg-12 ms-auto">
+            <div class="row justify-content-start">
+              <DefaultInfoCard icon="camera" title="Aerial Photography and Videography"
+                description="Capture the extraordinary with inspiring photography and videography services from a new vantage point. Elevate your narrative with unparalleled precision and artistic perspective." />
+              <DefaultInfoCard icon="rocket" title="Expertise and Skill"
+                description="Leverage the latest in drone tech for high-quality and innovative visuals. Stay up to date with 4k videos, First Person View (FPV) flythroughs, hyperlapse and progressive waypoint videos, and more." />
+            </div>
           </div>
         </div>
-        <div class="col-lg-4 ms-auto me-auto">
-          <RotatingCard>
-            <RotatingCardFront :image="drone1" icon="local_police" title="Compliance and Regulations"
-              description="All missions operate in compliance with Part 107 FAA aviation regulations and fly with at least $1M in drone liability insurance coverage. Share the commitment to a culture of safety and excellence." />
-
-            <RotatingCardBack :image="drone2" title="Want more details?"
-              description="All commercial drone operators must adhere to Part 107 regulations when flying for any non-recreational purpose."
-              :action="[
-                {
-                  route: 'regulations',
-                  label: 'FAQ',
-                },
-              ]" />
-          </RotatingCard>
+        <div class="row mt-4">
+          <div class="col-lg-6 col-sm-6">
+            <h3>
+              <RouterLink class="color-info" :to="{ name: 'services' }" rel="tooltip" title="Service Highlights"
+                data-placement="bottom">
+                Spark Imagination
+              </RouterLink>
+            </h3>
+            <ol>
+              <li><b>Aerial Photography and Videography:</b> Stunning aerial perspective for real estate,
+                events, marketing, and monitoring.</li>
+              <li><b>Content Generation:</b> Engaging and dynamic website content to enhance online presence.</li>
+              <li><b>First Person Flythroughs:</b> Immersive first person experiences for virtual tours to showcase
+                properties and venues.</li>
+              <li><b>Inspections and Surveying:</b> Surveying, site and landscape inspection,
+                job sites, and infrastructure using drone technology.</li>
+              <li><b>Construction or Project Site Management:</b> Aerial insights for construction site management,
+                including
+                progress tracking, site planning, and safety monitoring.</li>
+              <li><b>Event Coverage:</b> Aerial coverage for events such as weddings, concerts, sports events,
+                and
+                festivals to capture dynamic and immersive footage.</li>
+              <li><b>Consultation and Training:</b> Consultation services on drone technology, regulations, and
+                best
+                practices, as well as offering training programs for drone operators and businesses.</li>
+            </ol>
+            The sky's the limit!
+          </div>
+          <div class="col-lg-6 col-sm-6 mt-0 pt-0">
+            <RouterLink :to="{ name: 'services' }" rel="tooltip" title="Service Highlights" data-placement="bottom">
+              <TransparentBlogCard :image="pano3" title="" description="Click for Service Highlights" />
+            </RouterLink>
+          </div>
         </div>
       </div>
     </div>

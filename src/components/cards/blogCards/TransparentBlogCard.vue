@@ -37,14 +37,14 @@ defineProps({
           title
         }}</a>
         <span v-else>{{
-          title
-        }}</span>
+            title
+          }}</span>
       </h5>
       <p>
         {{ description }}
       </p>
       <a v-if="action?.html" :href="action.html" class="text-sm icon-move-right" :class="`text-${action.color}`">{{
-        action.label }}
+          action.label }}
         <i class="fas fa-arrow-right text-xs ms-1"></i>
       </a>
       <RouterLink v-if="action?.route" :to="{ name: action.route }" class="text-sm icon-move-right"

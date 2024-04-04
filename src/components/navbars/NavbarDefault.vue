@@ -99,28 +99,28 @@ watch(
     ' navbar-dark bg-gradient-dark z-index-3 py-3': props.dark
   }">
     <div :class="props.transparent || props.light || props.dark
-      ? 'container'
-      : 'container-fluid px-0'
-      ">
+    ? 'container'
+    : 'container-fluid px-0'
+    ">
       <RouterLink class="navbar-brand d-none d-md-block" :class="[
-        (props.transparent && textDark.value) || !props.transparent
-          ? 'text-dark font-weight-bolder ms-sm-3'
-          : 'text-white font-weight-bolder ms-sm-3'
-      ]" :to="{ name: 'presentation' }" rel="tooltip" title="Altitude Droneworks" data-placement="bottom">
+    (props.transparent && textDark.value) || !props.transparent
+      ? 'text-dark font-weight-bolder ms-sm-3'
+      : 'text-white font-weight-bolder ms-sm-3'
+  ]" :to="{ name: 'presentation' }" rel="tooltip" title="Altitude Droneworks" data-placement="bottom">
         <img :src="logo" alt="altitude droneworks icon" loading="lazy" :style="{ height: '30px', width: '30px' }" />
       </RouterLink>
       <RouterLink class="navbar-brand d-block d-md-none" :class="props.transparent || props.dark
-        ? 'text-white'
-        : 'font-weight-bolder ms-sm-3'
-        " :to="{ name: 'presentation' }" rel="tooltip" title="Altitude Droneworks" data-placement="bottom">
+    ? 'text-white'
+    : 'font-weight-bolder ms-sm-3'
+    " :to="{ name: 'presentation' }" rel="tooltip" title="Altitude Droneworks" data-placement="bottom">
         <img :src="logo" alt="altitude droneworks icon" loading="lazy" :style="{ height: '30px', width: '30px' }" />
       </RouterLink>
       <RouterLink class="btn btn-sm bg-gradient-info mb-0 ms-auto d-lg-none d-block" :to="{ name: 'contactus' }"
         rel="tooltip" title="Contact Us" data-placement="bottom">
         Contact Us
       </RouterLink>
-      <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
-        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon mt-2">
           <span class="navbar-toggler-bar bar1"></span>
           <span class="navbar-toggler-bar bar2"></span>

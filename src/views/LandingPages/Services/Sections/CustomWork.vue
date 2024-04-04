@@ -6,6 +6,7 @@ import BackgroundBlogCard from "../../../../components/cards/blogCards/Backgroun
 //Vue Material Kit 2 components
 import foundry from "@/assets/img/altitude/events/foundry1.jpg";
 import foundry2 from "@/assets/img/altitude/events/foundry2.jpg";
+import land1 from "@/assets/img/altitude/land/land4.jpg";
 import traffic_still from "@/assets/img/altitude/events/traffic_still.jpg";
 </script>
 <template>
@@ -24,8 +25,13 @@ import traffic_still from "@/assets/img/altitude/events/traffic_still.jpg";
           }" />
         </div>
         <div class="col-lg-3 col-sm-6">
-          <TransparentBlogCard :image="traffic_still" title="Survey and Inspection" description="" :action="{
+          <TransparentBlogCard :image="traffic_still" title="Traffic and Pedestrian Survey" description="" :action="{
             route: 'traffic', color: 'info', label: 'Sample',
+          }" />
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <TransparentBlogCard :image="land1" title="Land Inspection" description="" :action="{
+            route: 'land', color: 'info', label: 'Sample',
           }" />
         </div>
       </div>
