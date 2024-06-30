@@ -3,10 +3,35 @@ import { RouterLink } from "vue-router";
 import { ref, watch } from "vue";
 import { useWindowsWidth } from "../../assets/js/useWindowsWidth";
 
+// Auth JS
+import { isAuthenticated, login, logout, tokenResult } from '../../shared/auth.js'
+
 // images
 import logo from "@/assets/img/altitude/logo_big.png";
 import ArrDark from "@/assets/img/down-arrow-dark.svg";
 import DownArrWhite from "@/assets/img/down-arrow-white.svg";
+
+// User auth
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const code = urlParams.get("code")
+if (code) {
+  // Post to the backend to get a token
+  fetch("https://altitudedroneworks.auth.us-east-1.amazoncognito.com/oauth2/token", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body: new URLSearchParams({
+      code,
+      "grant_type": "authorization_code",
+      "client_id": import.meta.env.VITE_APP_CLIENT_ID,
+      "redirect_uri": "http://localhost:3000",
+    })
+  })
+    .then(response => response.json())
+    .then(tokenResult);
+}
 
 const props = defineProps({
   action: {
@@ -115,10 +140,17 @@ watch(
     " :to="{ name: 'presentation' }" rel="tooltip" title="Altitude Droneworks" data-placement="bottom">
         <img :src="logo" alt="altitude droneworks icon" loading="lazy" :style="{ height: '30px', width: '30px' }" />
       </RouterLink>
-      <RouterLink class="btn btn-sm bg-gradient-info mb-0 ms-auto d-lg-none d-block" :to="{ name: 'contactus' }"
-        rel="tooltip" title="Contact Us" data-placement="bottom">
+      <RouterLink class="btn btn-sm bg-gradient-info mb-0 d-lg-none d-block" :to="{ name: 'contactus' }" rel="tooltip"
+        title="Contact Us" data-placement="bottom">
         Contact Us
       </RouterLink>
+      <div v-if="isAuthenticated()" class="btn btn-sm bg-gradient-warning mb-0 ms-auto d-lg-none d-block"
+        v-on:click="logout">
+        Logout
+      </div>
+      <div v-else class="btn btn-sm bg-gradient-success mb-0 ms-auto d-lg-none d-block" v-on:click="login">
+        Login
+      </div>
       <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
         data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon mt-2">
@@ -128,7 +160,25 @@ watch(
         </span>
       </button>
       <div class="collapse navbar-collapse pt-2 pb-2" id="navigation">
-        <ul class="navbar-nav navbar-nav-hover ms-auto">
+        <ul class="navbar-nav d-lg-block d-none">
+          <li class="nav-item">
+            <RouterLink class="btn btn-sm mb-0 bg-gradient-info" :to="{ name: 'contactus' }" rel="tooltip"
+              title="Contact Us" data-placement="bottom">
+              Contact Us
+            </RouterLink>
+          </li>
+        </ul>
+        <ul class="navbar-nav d-lg-block d-none ms-auto">
+          <li class="nav-item">
+            <div v-if="isAuthenticated()" class="btn btn-sm mb-0 mt-0 bg-gradient-warning m-2" v-on:click="logout">
+              Logout
+            </div>
+            <div v-else class="btn btn-sm mb-0 mt-0 bg-gradient-success m-2" v-on:click="login">
+              Login
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-hover">
           <li class="nav-item dropdown dropdown-hover mx-2">
             <div class="d-lg-none px-2">
               <RouterLink :to="{ name: 'presentation' }" class="dropdown-item border-radius-md">
@@ -184,14 +234,6 @@ watch(
                 </div>
               </div>
             </div>
-          </li>
-        </ul>
-        <ul class="navbar-nav d-lg-block d-none">
-          <li class="nav-item">
-            <RouterLink class="btn btn-sm mb-0 bg-gradient-info" :to="{ name: 'contactus' }" rel="tooltip"
-              title="Contact Us" data-placement="bottom">
-              Contact Us
-            </RouterLink>
           </li>
         </ul>
       </div>

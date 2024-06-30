@@ -88,21 +88,7 @@ import zone2 from "@/assets/img/drones/zone2.jpg";
             ]" />
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <p class="text-center mt-5">
-            <i class="fa fa-lock" aria-hidden="true"></i> Secured Payment by
-            <b> Square </b> with: <br />
-            <i class="fa fa-cc-paypal fa-2x me-1" aria-hidden="true"></i>
-            <i class="fa fa-cc-visa fa-2x me-1" aria-hidden="true"></i>
-            <i class="fa fa-cc-mastercard fa-2x mx-1" aria-hidden="true"></i>
-            <i class="fa fa-cc-amex fa-2x me-1" aria-hidden="true"></i>
-            <br />
-            Also accepting cash, check, paypal, venmo, ect.
-          </p>
-        </div>
-      </div>
-      <div class="bg-gradient-success position-relative mx-n3 overflow-hidden">
+      <div class="bg-gradient-success position-relative mx-n3 overflow-hidden mt-2">
         <img src="@/assets/img/shapes/pattern-lines.svg" alt="pattern-lines"
           class="position-absolute start-0 top-md-0 w-100 opacity-6" />
         <div class="container pb-lg-8 pb-7 pt-5 postion-relative z-index-2 position-relative">
@@ -128,6 +114,20 @@ import zone2 from "@/assets/img/drones/zone2.jpg";
           <div class="card-header p-0 position-relative">
             <img :src="zone2" alt="bluezone travel travel" class="img-fluid border-radius-lg" />
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-center mt-2">
+            <i class="fa fa-lock" aria-hidden="true"></i> Secured Payment by
+            <b> Square </b> with: <br />
+            <i class="fa fa-cc-paypal fa-2x me-1" aria-hidden="true"></i>
+            <i class="fa fa-cc-visa fa-2x me-1" aria-hidden="true"></i>
+            <i class="fa fa-cc-mastercard fa-2x mx-1" aria-hidden="true"></i>
+            <i class="fa fa-cc-amex fa-2x me-1" aria-hidden="true"></i>
+            <br />
+            Also accepting cash, check, paypal, venmo, ect.
+          </p>
         </div>
       </div>
     </div>

@@ -15,15 +15,14 @@ export default {
   },
   methods: {
     submitForm: function () {
-      const requestOptions = {
+      fetch(import.meta.env.VITE_APP_REDIRECT + "/api/v1/contact", {
         method: "POST",
         headers: {
-          "x-api-key": "cOKrN4LJFE5pnzeWsPZ164XCGD3wdU8f3TWQGejT",
+          "x-api-key": import.meta.env.VITE_APP_API_KEY,
           "Content-Type": "application/json",
         },
         body: JSON.stringify(this.formData)
-      };
-      fetch("https://altitudedroneworks.com/api/v1/contact", requestOptions)
+      })
         .then(res => {
           console.log(res)
           this.formSubmitted = true

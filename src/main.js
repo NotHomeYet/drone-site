@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import { createPinia } from "pinia";
 import App from "./App.vue";
 import router from "./router";
+import vueCookies from 'vue-cookies'
 
 // Nucleo Icons
 import "./assets/css/nucleo-icons.css";
@@ -21,4 +22,5 @@ app.use(createPinia());
 app.use(router);
 app.use(materialKit);
 app.use(View360);
+app.use(vueCookies);
 app.mount("#app");

@@ -1,6 +1,9 @@
 <script setup>
 import { onMounted, onUnmounted } from "vue";
 
+// Auth JS
+import { isAuthenticated } from '../../shared/auth.js'
+
 //common components
 import DefaultNavbar from "@/components/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/components/footers/FooterDefault.vue";
@@ -9,6 +12,7 @@ import DefaultFooter from "@/components/footers/FooterDefault.vue";
 import VideoBackground from 'vue-responsive-video-background-player'
 
 // sections
+import PresentationDownload from "./Sections/PresentationDownload.vue";
 import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";
 import PresentationInformation from "./Sections/PresentationInformation.vue";
 import PresentationPricing from "./Sections/PresentationPricing.vue";
@@ -37,7 +41,10 @@ onUnmounted(() => {
       </div>
     </div>
   </div>
-  <div class="mx-auto body-container">
+  <div v-if="isAuthenticated()" class="mx-auto body-container">
+    <PresentationDownload />
+  </div>
+  <div v-else class="mx-auto body-container">
     <VideoBackground class="mx-auto position-relative h750" :src="`${splashView}`">
       <div class="container">
         <div class="row mt-12 pt-6">
@@ -54,7 +61,6 @@ onUnmounted(() => {
         </div>
       </div>
     </VideoBackground>
-
     <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
       <PresentationInformation />
       <!-- TODO add this back once I have some -->
