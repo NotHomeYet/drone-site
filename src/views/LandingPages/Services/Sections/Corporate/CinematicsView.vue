@@ -3,7 +3,6 @@
 //common components
 import DefaultNavbar from "@/components/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/components/footers/FooterDefault.vue";
-import VideoBackground from 'vue-responsive-video-background-player'
 
 // image
 import p2 from "@/assets/img/altitude/cinematics/p2.jpg";

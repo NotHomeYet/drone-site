@@ -8,9 +8,6 @@ import { isAuthenticated } from '../../shared/auth.js'
 import DefaultNavbar from "@/components/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/components/footers/FooterDefault.vue";
 
-// Video Components
-import VideoBackground from 'vue-responsive-video-background-player'
-
 // sections
 import PresentationDownload from "./Sections/PresentationDownload.vue";
 import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";

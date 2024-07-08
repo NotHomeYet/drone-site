@@ -1,6 +1,6 @@
 
 export const isAuthenticated = () => {
-    const acess_token = getCookie("access_token");
+    const acess_token = parseJwt(accessToken());
     if (acess_token) {
         if (Date.now() >= acess_token.exp * 1000) {
             return false
@@ -13,30 +13,48 @@ export const isAuthenticated = () => {
 }
 
 export const userEmail = () => {
-    const id_token = getCookie("id_token");
+    const id_token = parseJwt(idToken());
     if (id_token && id_token.email) {
         return id_token.email
     }
     return ""
 }
 
+export const fetchToken = (code) => {
+    // Login with the (simplified) auth flow
+    fetch("https://altitudedroneworks.auth.us-east-1.amazoncognito.com/oauth2/token", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams({
+            code,
+            "grant_type": "authorization_code",
+            "client_id": import.meta.env.VITE_APP_CLIENT_ID,
+            "redirect_uri": import.meta.env.VITE_APP_REDIRECT,
+        })
+    })
+        .then(res => res.json())
+        .then(tokenResult);
+}
+
 export const login = () => {
+    // Check if we can use the refresh token
     const refresh_token = getCookie("refresh_token");
     if (refresh_token) {
-        // Post to the backend to get a token from the refresh token
         fetch("https://altitudedroneworks.auth.us-east-1.amazoncognito.com/oauth2/token", {
             method: "POST",
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded",
             },
             body: new URLSearchParams({
-                "grant_type": "refresh_token",
                 "refresh_token": refresh_token,
+                "grant_type": "refresh_token",
                 "client_id": import.meta.env.VITE_APP_CLIENT_ID,
-                "redirect_uri": "http://localhost:3000",
+                "redirect_uri": import.meta.env.VITE_APP_REDIRECT,
             })
         })
-            .then(response => response.json())
+            .then(res => res.json())
             .then(tokenResult);
     } else {
         window.location.href = "https://altitudedroneworks.auth.us-east-1.amazoncognito.com/oauth2/authorize?response_type=code&state=TODO&client_id=" + import.meta.env.VITE_APP_CLIENT_ID + "&redirect_uri=" + import.meta.env.VITE_APP_REDIRECT
@@ -50,16 +68,24 @@ export const logout = () => {
     window.location.href = "https://altitudedroneworks.auth.us-east-1.amazoncognito.com/logout?client_id=" + import.meta.env.VITE_APP_CLIENT_ID + "&logout_uri=" + import.meta.env.VITE_APP_REDIRECT
 }
 
-export const saveCookie = (name, value) => {
+export const accessToken = () => {
+    return getCookie("access_token")
+}
+
+export const idToken = () => {
+    return getCookie("id_token")
+}
+
+const saveCookie = (name, value) => {
     $cookies.set(name, value)
 }
 
-export const getCookie = (name) => {
+const getCookie = (name) => {
     const value = $cookies.get(name)
     return value
 }
 
-export const parseJwt = (token) => {
+const parseJwt = (token) => {
     if (!token) {
         return null
     }
@@ -71,12 +97,12 @@ export const parseJwt = (token) => {
     return JSON.parse(jsonPayload);
 }
 
-export const tokenResult = (jsonData => {
+const tokenResult = (jsonData => {
     if (jsonData.access_token) {
-        saveCookie("access_token", parseJwt(jsonData.access_token))
+        saveCookie("access_token", jsonData.access_token)
     }
     if (jsonData.id_token) {
-        saveCookie("id_token", parseJwt(jsonData.id_token))
+        saveCookie("id_token", jsonData.id_token)
     }
     if (jsonData.refresh_token) {
         saveCookie("refresh_token", jsonData.refresh_token)

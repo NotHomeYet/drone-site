@@ -3,7 +3,6 @@
 //common components
 import DefaultNavbar from "@/components/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/components/footers/FooterDefault.vue";
-import VideoBackground from 'vue-responsive-video-background-player'
 
 // image
 import alexa2 from "@/assets/img/altitude/bespoke/alexa2.jpg";
@@ -43,7 +42,8 @@ import peregrine from "@/assets/img/altitude/bespoke/peregrine.mp4";
         </div>
         <div class="row">
           <div class="col-lg-6 col-sm-6 mt-4">
-            <VideoBackground class="shadow border-radius-lg" style="height: 100%; min-height: 200px;" :src="peregrine" />
+            <VideoBackground class="shadow border-radius-lg" style="height: 100%; min-height: 200px;"
+              :src="peregrine" />
           </div>
           <div class="col-lg-6 col-sm-6 mt-4">
             <img :src="peregrine4" :alt="peregrine4" class="img-fluid shadow border-radius-lg" loading="lazy" />

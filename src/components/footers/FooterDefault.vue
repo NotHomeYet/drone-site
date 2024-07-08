@@ -76,7 +76,7 @@ defineProps({
 });
 </script>
 <template>
-  <footer class="footer pt-5 mt-5">
+  <footer class="footer mt-4">
     <div class="container">
       <div class="row">
         <div class="col-md-5 mb-4 ms-auto">

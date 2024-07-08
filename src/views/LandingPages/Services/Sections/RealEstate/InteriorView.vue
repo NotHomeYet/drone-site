@@ -3,14 +3,11 @@
 //common components
 import DefaultNavbar from "@/components/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/components/footers/FooterDefault.vue";
-import VideoBackground from 'vue-responsive-video-background-player'
 
 // image
 import bath from "@/assets/img/altitude/house/random/bath.jpg";
 import bath2 from "@/assets/img/altitude/house/random/bath2.jpg";
-import bath3 from "@/assets/img/altitude/house/random/bath3.jpg";
 import room1 from "@/assets/img/altitude/house/random/room1.jpg";
-import room2 from "@/assets/img/altitude/house/random/room2.jpg";
 import room3 from "@/assets/img/altitude/house/random/room3.jpg";
 import fpv from "@/assets/img/altitude/house/random/fpv.mp4";
 </script>

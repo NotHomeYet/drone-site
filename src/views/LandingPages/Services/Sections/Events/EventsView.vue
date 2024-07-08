@@ -3,7 +3,6 @@
 //common components
 import DefaultNavbar from "@/components/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/components/footers/FooterDefault.vue";
-import VideoBackground from 'vue-responsive-video-background-player'
 
 // image
 import ball from "@/assets/img/altitude/events/ball.mp4";
@@ -36,7 +35,8 @@ import foundry2 from "@/assets/img/altitude/events/foundry2.jpg";
         </div>
         <div class="row">
           <div class="col-lg-6 col-sm-6 mt-4">
-            <VideoBackground class="shadow border-radius-lg" style="height: 100%; min-height: 200px;" :src="fall_fest" />
+            <VideoBackground class="shadow border-radius-lg" style="height: 100%; min-height: 200px;"
+              :src="fall_fest" />
           </div>
           <div class="col-lg-6 col-sm-6 mt-4">
             <img :src="foundry" :alt="foundry" class="img-fluid shadow border-radius-lg" loading="lazy" />

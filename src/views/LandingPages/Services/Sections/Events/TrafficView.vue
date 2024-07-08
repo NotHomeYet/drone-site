@@ -3,7 +3,6 @@
 //common components
 import DefaultNavbar from "@/components/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/components/footers/FooterDefault.vue";
-import VideoBackground from 'vue-responsive-video-background-player'
 
 // image
 import land3 from "@/assets/img/altitude/events/land3.jpg";
@@ -30,7 +29,8 @@ import traffic_mv from "@/assets/img/altitude/events/traffic_mv.mp4";
             <img :src="traffic" :alt="traffic" class="img-fluid shadow border-radius-lg" loading="lazy" />
           </div>
           <div class="col-lg-6 col-sm-6 mt-4">
-            <VideoBackground class="shadow border-radius-lg" style="height: 100%; min-height: 200px" :src="traffic_mv" />
+            <VideoBackground class="shadow border-radius-lg" style="height: 100%; min-height: 200px"
+              :src="traffic_mv" />
           </div>
         </div>
         <div class="row">

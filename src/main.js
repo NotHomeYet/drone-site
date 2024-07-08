@@ -3,6 +3,7 @@ import { createPinia } from "pinia";
 import App from "./App.vue";
 import router from "./router";
 import vueCookies from 'vue-cookies'
+import asyncComputed from 'vue-async-computed'
 
 // Nucleo Icons
 import "./assets/css/nucleo-icons.css";
@@ -23,4 +24,7 @@ app.use(router);
 app.use(materialKit);
 app.use(View360);
 app.use(vueCookies);
+app.use(asyncComputed);
+
+app.component('VideoBackground', videoBackground);
 app.mount("#app");

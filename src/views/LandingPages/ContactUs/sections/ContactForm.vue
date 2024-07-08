@@ -15,7 +15,7 @@ export default {
   },
   methods: {
     submitForm: function () {
-      fetch(import.meta.env.VITE_APP_REDIRECT + "/api/v1/contact", {
+      fetch(import.meta.env.VITE_APP_URL + "/api/v1/contact", {
         method: "POST",
         headers: {
           "x-api-key": import.meta.env.VITE_APP_API_KEY,

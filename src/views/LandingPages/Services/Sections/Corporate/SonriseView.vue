@@ -3,7 +3,6 @@
 //common components
 import DefaultNavbar from "@/components/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/components/footers/FooterDefault.vue";
-import VideoBackground from 'vue-responsive-video-background-player'
 
 // image
 import camp1 from "@/assets/img/altitude/camp/camp1.jpg";
@@ -44,12 +43,12 @@ import sonrise from "@/assets/img/altitude/camp/sonrise.mp4";
           <div class="col-lg-6 col-sm-6 mt-4">
             <img :src="camp2" :alt="camp2" class="img-fluid shadow border-radius-lg" loading="lazy" />
           </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 mt-4">
-          <img :src="pano1" :alt="pano1" class="img-fluid shadow border-radius-lg" loading="lazy" />
         </div>
-      </div>
+        <div class="row">
+          <div class="col-lg-12 mt-4">
+            <img :src="pano1" :alt="pano1" class="img-fluid shadow border-radius-lg" loading="lazy" />
+          </div>
+        </div>
         <div class="row">
           <div class="col-lg-12 mt-4">
             <img :src="pano2" :alt="pano2" class="img-fluid shadow border-radius-lg" loading="lazy" />

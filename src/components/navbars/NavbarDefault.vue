@@ -4,7 +4,7 @@ import { ref, watch } from "vue";
 import { useWindowsWidth } from "../../assets/js/useWindowsWidth";
 
 // Auth JS
-import { isAuthenticated, login, logout, tokenResult } from '../../shared/auth.js'
+import { isAuthenticated, login, logout, fetchToken } from '../../shared/auth.js'
 
 // images
 import logo from "@/assets/img/altitude/logo_big.png";
@@ -16,21 +16,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const code = urlParams.get("code")
 if (code) {
-  // Post to the backend to get a token
-  fetch("https://altitudedroneworks.auth.us-east-1.amazoncognito.com/oauth2/token", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
-    body: new URLSearchParams({
-      code,
-      "grant_type": "authorization_code",
-      "client_id": import.meta.env.VITE_APP_CLIENT_ID,
-      "redirect_uri": "http://localhost:3000",
-    })
-  })
-    .then(response => response.json())
-    .then(tokenResult);
+  fetchToken(code)
 }
 
 const props = defineProps({
